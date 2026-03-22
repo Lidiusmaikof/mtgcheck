@@ -1,0 +1,59 @@
+startDialog:
+  msgs:
+  - id: 0
+    message:
+      sender: NPC
+      text: §l§5Hola! que bueno verte por aca, mira necesito de tu ayuda, podras hacerlo?
+  - id: 1
+    message:
+      sender: PLAYER
+      text: §l§2Manos a la obra.
+description: §l§5Recolecta Material para Sasha.
+endRewards:
+- id: expReward
+  xp: 100
+- id: itemReward
+  items:
+  - DataVersion: 4671
+    id: minecraft:emerald
+    count: 32
+    schema_version: 1
+  - DataVersion: 4671
+    id: minecraft:lapis_lazuli
+    count: 32
+    schema_version: 1
+  - DataVersion: 4671
+    id: minecraft:diamond
+    count: 32
+    schema_version: 1
+  - DataVersion: 4671
+    id: minecraft:iron_ingot
+    count: 32
+    schema_version: 1
+  - DataVersion: 4671
+    id: minecraft:gold_ingot
+    count: 32
+    schema_version: 1
+name: §l§5Recolecta Material
+starterNPC: fancynpcs#npc6
+endMsg: '§l§5Sasha: Muchas gracias, espero verte pronto por aca.'
+manager:
+  branches:
+    '0':
+      stages:
+        '0':
+          npcID: fancynpcs#npc6
+          items:
+          - ==: org.bukkit.inventory.ItemStack
+            DataVersion: 4671
+            id: minecraft:oak_log
+            count: 64
+            schema_version: 1
+          - ==: org.bukkit.inventory.ItemStack
+            DataVersion: 4671
+            id: minecraft:string
+            count: 32
+            schema_version: 1
+          stageType: ITEMS
+      endingStages: {}
+id: 8

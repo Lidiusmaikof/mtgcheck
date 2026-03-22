@@ -1,0 +1,17 @@
+player_name: Lastsamurai
+language: zh_CN
+setlang: false
+logout_location:
+  world: world
+  x: -1420.1969984558766
+  y: 76.0
+  z: 1113.3574391886182
+  pitch: 24.299969
+  yaw: -124.82321
+last_location:
+  world: world
+  x: -1501.7619729029645
+  y: -9.0
+  z: 1034.1848537383812
+  pitch: 25.349983
+  yaw: 89.83267

@@ -1,0 +1,34 @@
+provider: beautyquests:players
+identifier: 00000000-0000-0000-0009-01fd23cc1a33
+quests:
+  '2':
+    startingTime: 1773892008985
+    currentBranch: 0
+    state: IN_REGULAR_STAGE
+    currentStage: 0
+    stageData:
+      '0': {}
+  '3':
+    state: NOT_STARTED
+    stageData: {}
+    questFlow: 0:0
+    timesFinished: 1
+  '4':
+    startingTime: 1773892512986
+    currentBranch: 0
+    state: IN_REGULAR_STAGE
+    currentStage: 0
+    stageData:
+      '0':
+        remaining:
+          1f727de5-158e-31ec-842d-042b585e88b5: 20
+          29c94ddf-dc91-34dd-97fa-41950c53efcd: 28
+  '5':
+    startingTime: 1773892570814
+    currentBranch: 0
+    state: IN_REGULAR_STAGE
+    stageData:
+      '1':
+        amount: 1
+    questFlow: 0:0
+    currentStage: 1

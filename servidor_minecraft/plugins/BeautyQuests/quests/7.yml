@@ -1,0 +1,60 @@
+startDialog:
+  msgs:
+  - id: 0
+    message:
+      sender: NPC
+      text: §l§3Hola! Que bueno tenerte denuevo por aqui, tengo otra mision para ti
+        y esta vez te recompensare mejor, aceptas?
+  - id: 1
+    message:
+      sender: PLAYER
+      text: §l§2Porsupuesto que si!
+description: §l§3Lleva redstone a Hermenegildo.
+endRewards:
+- id: expReward
+  xp: 100
+- id: itemReward
+  items:
+  - DataVersion: 4671
+    id: minecraft:emerald
+    count: 32
+    schema_version: 1
+  - DataVersion: 4671
+    id: minecraft:lapis_lazuli
+    count: 32
+    schema_version: 1
+  - DataVersion: 4671
+    id: minecraft:diamond
+    count: 32
+    schema_version: 1
+  - DataVersion: 4671
+    id: minecraft:iron_ingot
+    count: 32
+    schema_version: 1
+  - DataVersion: 4671
+    id: minecraft:gold_ingot
+    count: 32
+    schema_version: 1
+name: §l§3Recolecta Redstone
+starterNPC: fancynpcs#npc5
+endMsg: '§l§3Hermenegildo: Muchas gracias, te estare necesitando...'
+manager:
+  branches:
+    '0':
+      stages:
+        '0':
+          npcID: fancynpcs#npc5
+          items:
+          - ==: org.bukkit.inventory.ItemStack
+            DataVersion: 4671
+            id: minecraft:redstone
+            count: 64
+            schema_version: 1
+          - ==: org.bukkit.inventory.ItemStack
+            DataVersion: 4671
+            id: minecraft:redstone
+            count: 64
+            schema_version: 1
+          stageType: ITEMS
+      endingStages: {}
+id: 7

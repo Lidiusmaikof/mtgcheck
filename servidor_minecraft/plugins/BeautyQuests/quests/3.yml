@@ -1,0 +1,48 @@
+name: §6§lReune Cuero
+description: §7§lReune Cuero para Sasha
+starterNPC: fancynpcs#npc6
+startDialog:
+  msgs:
+  - id: 0
+    message:
+      sender: NPC
+      text: §5§lHola Forastero! Mira necesito un poco de cuero para mi tienda de confecciones
+        en mi pueblo, podrias ayudarme?
+  - id: 1
+    message:
+      sender: PLAYER
+      text: §2§lClaro que si pero hay una recompensa verdad?
+  - id: 2
+    message:
+      sender: NPC
+      text: §5§lPorsupuesto, seras bien recompensado
+  - id: 3
+    message:
+      sender: PLAYER
+      text: §2§lBueno te ayudare.
+endMsg: '§5§lSasha: Gracias Forastero, seras muy bienvenido en mi pueblo, toma tu
+  recompensa.'
+endRewards:
+- id: expReward
+  xp: 50
+- id: itemReward
+  items:
+  - DataVersion: 4671
+    id: minecraft:diamond
+    count: 8
+    schema_version: 1
+manager:
+  branches:
+    '0':
+      stages:
+        '0':
+          npcID: fancynpcs#npc6
+          items:
+          - ==: org.bukkit.inventory.ItemStack
+            DataVersion: 4671
+            id: minecraft:leather
+            count: 10
+            schema_version: 1
+          stageType: ITEMS
+      endingStages: {}
+id: 3

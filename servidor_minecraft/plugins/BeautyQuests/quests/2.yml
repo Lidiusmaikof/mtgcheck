@@ -1,0 +1,53 @@
+name: §3§lReune Caña de Azucar
+description: §2§lReune Caña de Azucar para ayudar a Hermenegildo.
+starterNPC: fancynpcs#npc5
+startDialog:
+  msgs:
+  - id: 0
+    message:
+      sender: NPC
+      text: §3§lHola Forastero! mira necesito Caña de Azucar para mis cultivos en
+        mi pueblo, podrias ayudarme?
+  - id: 1
+    message:
+      sender: PLAYER
+      text: §2§lPorsupuesto! pero que gano yo?
+  - id: 2
+    message:
+      sender: NPC
+      text: §4§lTranquilo, se te recompensara bien
+  - id: 3
+    message:
+      sender: PLAYER
+      text: §2§lVale, voy a ayudarte.
+  - id: 4
+    message:
+      sender: NPC
+      text: §3§lGenial! de la que me estas salvando.
+endMsg: '§3§lHermenegildo: §2§lGracias forastero! hablare muy bien de ti para que
+  otr@s puedan contactarte, toma tu recompensa.'
+endRewards:
+- id: expReward
+  xp: 40
+- id: itemReward
+  items:
+  - DataVersion: 4671
+    id: minecraft:diamond
+    count: 10
+    schema_version: 1
+manager:
+  branches:
+    '0':
+      stages:
+        '0':
+          npcID: fancynpcs#npc5
+          items:
+          - ==: org.bukkit.inventory.ItemStack
+            DataVersion: 4671
+            id: minecraft:sugar_cane
+            count: 32
+            schema_version: 1
+          stageType: ITEMS
+          customText: close
+      endingStages: {}
+id: 2

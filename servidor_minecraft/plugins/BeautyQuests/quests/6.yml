@@ -1,0 +1,57 @@
+description: §l§9Completa Raids para recibir la recompensa!
+endRewards:
+- id: expReward
+  xp: 200
+- id: itemReward
+  items:
+  - DataVersion: 4671
+    id: minecraft:emerald
+    count: 48
+    schema_version: 1
+  - DataVersion: 4671
+    id: minecraft:lapis_lazuli
+    count: 48
+    schema_version: 1
+  - DataVersion: 4671
+    id: minecraft:diamond
+    count: 48
+    schema_version: 1
+  - DataVersion: 4671
+    id: minecraft:iron_ingot
+    count: 48
+    schema_version: 1
+  - DataVersion: 4671
+    id: minecraft:gold_ingot
+    count: 48
+    schema_version: 1
+name: §l§4Mision Diaria
+endMsg: §l64Felicidades! completaste la mision Diaria.
+manager:
+  branches:
+    '0':
+      stages:
+        '0':
+          objects:
+            88867063-9721-31ba-a63e-4230b54b16c4:
+              amount: 30
+              object:
+                factoryName: bukkitEntity
+                value: VINDICATOR
+            f2f29688-c92f-3acd-8895-8a92353a3815:
+              amount: 10
+              object:
+                factoryName: bukkitEntity
+                value: WITCH
+            a2b06fea-3319-3807-8842-4caeeadeef5b:
+              amount: 5
+              object:
+                factoryName: bukkitEntity
+                value: EVOKER
+            b380ad34-4874-3e76-8d5b-b6ff78044987:
+              amount: 30
+              object:
+                factoryName: bukkitEntity
+                value: PILLAGER
+          stageType: MOBS
+      endingStages: {}
+id: 6

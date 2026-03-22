@@ -1,0 +1,516 @@
+[01:29:58] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.10+7-Ubuntu-124.04; Ubuntu null) on Linux 6.8.0-1044-azure (amd64)
+[01:29:58] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.11-99-main@81b9122 (2026-01-20T19:08:30Z) for Minecraft 1.21.11
+[01:29:58] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[01:30:00] [ServerMain/INFO]: [MavenLibraryResolver] Downloading https://maven-central.storage-download.googleapis.com/maven2/me/carleslc/Simple-YAML/Simple-Yaml/1.8.4/Simple-Yaml-1.8.4.pom
+[01:30:01] [ServerMain/INFO]: [MavenLibraryResolver] Downloading https://maven.lavalink.dev/snapshots/me/carleslc/Simple-YAML/Simple-Yaml/1.8.4/Simple-Yaml-1.8.4.pom
+[01:30:01] [ServerMain/INFO]: [MavenLibraryResolver] Downloading https://maven.lavalink.dev/releases/me/carleslc/Simple-YAML/Simple-Yaml/1.8.4/Simple-Yaml-1.8.4.pom
+[01:30:02] [ServerMain/INFO]: [MavenLibraryResolver] Downloading https://jitpack.io/me/carleslc/Simple-YAML/Simple-Yaml/1.8.4/Simple-Yaml-1.8.4.pom
+[01:30:02] [ServerMain/INFO]: [BeautyQuests] Paper is using the Google mirror for Maven central repository, which lacks some artifacts.
+BeautyQuests will use the default Maven central CDN until a better mirror has been found.
+
+[01:30:02] [ServerMain/WARN]: [MavenLibraryResolver] Use of Maven Central as a CDN is against the Maven Central Terms of Service. Use MavenLibraryResolver.MAVEN_CENTRAL_DEFAULT_MIRROR instead.
+java.lang.RuntimeException: Plugin used Maven Central for library resolution (central (https://repo1.maven.org/maven2/, default, releases+snapshots))
+	at io.papermc.paper.plugin.loader.library.impl.MavenLibraryResolver.addRepository(MavenLibraryResolver.java:126) ~[paper-api-1.21.11-R0.1-SNAPSHOT.jar:?]
+	at beautyquests-2.0.0.jar//fr.skytasul.quests.BeautyQuestsLoader.classloader(BeautyQuestsLoader.java:46) ~[?:?]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProviderFactory.build(SpigotPluginProviderFactory.java:59) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProviderFactory.build(SpigotPluginProviderFactory.java:28) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+	at io.papermc.paper.plugin.provider.type.PluginFileType.register(PluginFileType.java:72) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:95) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:63) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:17) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+	at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:15) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+	at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:113) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+	at net.minecraft.server.Main.main(Main.java:108) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+	at io.papermc.paper.PaperBootstrap.boot(PaperBootstrap.java:21) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+	at org.bukkit.craftbukkit.Main.main(Main.java:234) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[01:30:02] [ServerMain/INFO]: [BeautyQuests] Loading 8 libraries using Paper plugin loader...
+[01:30:02] [ServerMain/INFO]: [PluginInitializerManager] Initialized 26 plugins
+[01:30:02] [ServerMain/INFO]: [PluginInitializerManager] Paper plugins (4):
+ - CustomDiscs (2.5.0), FancyNpcs (2.9.2.344), Minepacks (2.5.5-T20260104173759), emotecraft (3.2.0-b.build.143)
+[01:30:02] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (22):
+ - AxGraves (1.26.2), BeautyQuests (2.0.0), BlockLocker (1.14.1), CrazyEnchantments (2.7.1), Geyser-Spigot (2.9.4-SNAPSHOT), InstantRestock (2.6.1), ItemEdit (3.7.8), LuckPerms (5.5.36), Multiverse-Core (5.5.3), Multiverse-Portals (5.2.1), MythicMobs (5.11.2-6a371d59), RedProtect (8.1.3-SNAPSHOT), SetHome (6.0), Shopkeepers (2.26.0), Sit (1.7.2), StringDupersReturn (1.0.12), TPA (3.2.7), WorldEdit (7.4.0+7381-3decaf0), WorldGuard (7.0.16-beta-01+ce4622f), floodgate (2.2.5-SNAPSHOT (b130-d73192f)), sleep-most (5.7.0), voicechat (2.6.12)
+[01:30:07] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[01:30:07] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[01:30:07] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 370.0ms
+[01:30:08] [ServerMain/ERROR]: Couldn't load file/towns-and-towers-1-13-3.zip pack metadata: Pack declares support for version newer than 81, but is missing mandatory fields min_format and max_format
+[01:30:13] [Worker-Main-1/ERROR]: Couldn't parse data file 'kaisyn:village/exclusives/village_piglin_house' from 'kaisyn:loot_table/village/exclusives/village_piglin_house.json': DataResult.Error['Unknown registry key in ResourceKey[minecraft:root / minecraft:item]: minecraft:chain': net.minecraft.world.level.storage.loot.LootTable@176fed7d]
+[01:30:13] [Worker-Main-1/WARN]: Found loot table element validation problem in {infinity_cave:custom_items/frostpale_plant@minecraft:loot_table}.pools[0].entries[0]: Unreachable entry!
+[01:30:13] [Worker-Main-1/WARN]: Found loot table element validation problem in {minecraft:blocks/pitcher_crop@minecraft:loot_table}.pools[1].entries[0]->{infinity_cave:custom_items/frostpale_plant@minecraft:loot_table}.pools[0].entries[0]: Unreachable entry!
+[01:30:15] [ServerMain/INFO]: Loaded 1497 recipes
+[01:30:15] [ServerMain/INFO]: Loaded 2067 advancements
+[01:30:15] [Server thread/INFO]: Starting minecraft server version 1.21.11
+[01:30:15] [Server thread/INFO]: Loading properties
+[01:30:15] [Server thread/INFO]: This server is running Paper version 1.21.11-99-main@81b9122 (2026-01-20T19:08:30Z) (Implementing API version 1.21.11-R0.1-SNAPSHOT)
+[01:30:15] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[01:30:16] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[01:30:16] [Server thread/INFO]: Using 4 threads for Netty based IO
+[01:30:16] [Server thread/INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
+[01:30:16] [Server thread/INFO]: Default game type: SURVIVAL
+[01:30:16] [Server thread/INFO]: Generating keypair
+[01:30:16] [Server thread/INFO]: Starting Minecraft server on *:25565
+[01:30:16] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[01:30:16] [Server thread/INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
+[01:30:16] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load 'plugins/CustomDiscs-2.5.0.jar' in 'plugins'
+org.bukkit.plugin.UnknownDependencyException: Unknown/missing dependency plugins: [CommandAPI, ProtocolLib]. Please download and install these plugins to run 'CustomDiscs'.
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:82) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:38) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:39) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+	at org.bukkit.craftbukkit.CraftServer.loadPlugins(CraftServer.java:555) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:320) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1258) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:388) ~[paper-1.21.11.jar:1.21.11-99-81b9122]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[01:30:16] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loading 4 libraries... please wait
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/adventure-api/4.16.0/adventure-api-4.16.0.jar
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/adventure-key/4.16.0/adventure-key-4.16.0.jar
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/examination-api/1.3.0/examination-api-1.3.0.jar
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/examination-string/1.3.0/examination-string-1.3.0.jar
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/org/jetbrains/annotations/24.1.0/annotations-24.1.0.jar
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/adventure-platform-bukkit/4.3.2/adventure-platform-bukkit-4.3.2.jar
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/adventure-platform-api/4.3.2/adventure-platform-api-4.3.2.jar
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-bungeecord/4.3.2/adventure-text-serializer-bungeecord-4.3.2.jar
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-legacy/4.13.1/adventure-text-serializer-legacy-4.13.1.jar
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/adventure-nbt/4.13.1/adventure-nbt-4.13.1.jar
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson-legacy-impl/4.13.1/adventure-text-serializer-gson-legacy-impl-4.13.1.jar
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/adventure-platform-facet/4.3.2/adventure-platform-facet-4.3.2.jar
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/adventure-platform-viaversion/4.3.2/adventure-platform-viaversion-4.3.2.jar
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/adventure-text-minimessage/4.16.0/adventure-text-minimessage-4.16.0.jar
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson/4.16.0/adventure-text-serializer-gson-4.16.0.jar
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-json/4.16.0/adventure-text-serializer-json-4.16.0.jar
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/option/1.0.0/option-1.0.0.jar
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [MythicMobs] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loading 0 libraries... please wait
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/io/github/revxrsal/lamp.bukkit/4.0.0-rc.13/lamp.bukkit-4.0.0-rc.13.jar
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/io/github/revxrsal/lamp.brigadier/4.0.0-rc.13/lamp.brigadier-4.0.0-rc.13.jar
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/io/github/revxrsal/lamp.common/4.0.0-rc.13/lamp.common-4.0.0-rc.13.jar
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/com/github/cryptomorin/XSeries/13.5.0/XSeries-13.5.0.jar
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/com/zaxxer/HikariCP/6.0.0/HikariCP-6.0.0.jar
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/fr/mrmicky/fastboard/2.1.5/fastboard-2.1.5.jar
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/adventure-api/4.9.3/adventure-api-4.9.3.jar
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/adventure-key/4.9.3/adventure-key-4.9.3.jar
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/examination-api/1.3.0/examination-api-1.3.0.jar
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/examination-string/1.3.0/examination-string-1.3.0.jar
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/org/jetbrains/annotations/22.0.0/annotations-22.0.0.jar
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/adventure-platform-bukkit/4.0.1/adventure-platform-bukkit-4.0.1.jar
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/adventure-platform-api/4.0.1/adventure-platform-api-4.0.1.jar
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-bungeecord/4.0.1/adventure-text-serializer-bungeecord-4.0.1.jar
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-legacy/4.9.1/adventure-text-serializer-legacy-4.9.1.jar
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/adventure-nbt/4.9.1/adventure-nbt-4.9.1.jar
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson/4.9.1/adventure-text-serializer-gson-4.9.1.jar
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson-legacy-impl/4.9.1/adventure-text-serializer-gson-legacy-impl-4.9.1.jar
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/adventure-platform-facet/4.0.1/adventure-platform-facet-4.0.1.jar
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/adventure-platform-viaversion/4.0.1/adventure-platform-viaversion-4.0.1.jar
+[01:30:17] [Server thread/INFO]: [SpigotLibraryLoader] [BeautyQuests] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/commons-lang/commons-lang/2.6/commons-lang-2.6.jar
+[01:30:17] [Server thread/INFO]: [Minepacks] PCGF-PluginLib not installed. Switching to standalone mode!
+[01:30:18] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loading 5 libraries... please wait
+[01:30:18] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/adventure-api/4.20.0/adventure-api-4.20.0.jar
+[01:30:18] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/adventure-key/4.20.0/adventure-key-4.20.0.jar
+[01:30:18] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/examination-api/1.3.0/examination-api-1.3.0.jar
+[01:30:18] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/examination-string/1.3.0/examination-string-1.3.0.jar
+[01:30:18] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/org/jetbrains/annotations/26.0.2/annotations-26.0.2.jar
+[01:30:18] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/adventure-platform-bukkit/4.3.4/adventure-platform-bukkit-4.3.4.jar
+[01:30:18] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/adventure-platform-api/4.3.4/adventure-platform-api-4.3.4.jar
+[01:30:18] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-bungeecord/4.3.4/adventure-text-serializer-bungeecord-4.3.4.jar
+[01:30:18] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/adventure-nbt/4.13.1/adventure-nbt-4.13.1.jar
+[01:30:18] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson-legacy-impl/4.13.1/adventure-text-serializer-gson-legacy-impl-4.13.1.jar
+[01:30:18] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/adventure-platform-facet/4.3.4/adventure-platform-facet-4.3.4.jar
+[01:30:18] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/adventure-platform-viaversion/4.3.4/adventure-platform-viaversion-4.3.4.jar
+[01:30:18] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/adventure-text-minimessage/4.20.0/adventure-text-minimessage-4.20.0.jar
+[01:30:18] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson/4.20.0/adventure-text-serializer-gson-4.20.0.jar
+[01:30:18] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-json/4.20.0/adventure-text-serializer-json-4.20.0.jar
+[01:30:18] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/option/1.1.0/option-1.1.0.jar
+[01:30:18] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar
+[01:30:18] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar
+[01:30:18] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar
+[01:30:18] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-commons/4.20.0/adventure-text-serializer-commons-4.20.0.jar
+[01:30:18] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/mtgcheck/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-legacy/4.20.0/adventure-text-serializer-legacy-4.20.0.jar
+[01:30:18] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.4.0+7381-3decaf0
+[01:30:19] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@28cb216]
+[01:30:19] [Server thread/INFO]: [WorldGuard] Loading server plugin WorldGuard v7.0.16-beta-01+ce4622f
+[01:30:19] [Server thread/INFO]: [CoreLogging] Loading server plugin Multiverse-Core v5.5.3
+[01:30:19] [Server thread/INFO]: [MythicMobs] Loading server plugin MythicMobs v5.11.2-6a371d59
+[01:30:19] [Server thread/INFO]: [LumineUtils] (io.lumine.mythic.bukkit.utils.) is bound to plugin MythicMobs - io.lumine.mythic.bukkit.MythicBukkit
+[01:30:19] [Server thread/INFO]: [MythicMobs] §x§f§f§0§0§0§0M§x§f§f§6§6§0§0y§x§f§f§c§c§0§0t§x§c§b§f§f§0§0h§x§6§5§f§f§0§0i§x§0§0§f§f§0§0c§x§0§0§f§f§6§6 §x§0§0§f§f§c§bE§x§0§0§c§b§f§fn§x§0§0§6§5§f§fa§x§0§0§0§0§f§fb§x§6§6§0§0§f§fl§x§c§c§0§0§f§fe§x§f§f§0§0§c§cd§x§f§f§0§0§6§6!
+[01:30:19] [Server thread/INFO]: [FancyNpcs] Loading server plugin FancyNpcs v2.9.2.344
+[01:30:19] [Server thread/INFO]: [floodgate] Loading server plugin floodgate v2.2.5-SNAPSHOT (b130-d73192f)
+[01:30:20] [Server thread/WARN]: [floodgate] en_ is not a supported Floodgate language.
+[01:30:20] [Server thread/INFO]: [floodgate] Took 788ms to boot Floodgate
+[01:30:20] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.5.36
+[01:30:20] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[01:30:20] [Server thread/INFO]: [Multiverse-Portals] Loading server plugin Multiverse-Portals v5.2.1
+[01:30:20] [Server thread/INFO]: [TPA] Loading server plugin TPA v3.2.7
+[01:30:20] [Server thread/INFO]: [voicechat] Loading server plugin voicechat v2.6.12
+[01:30:20] [Server thread/INFO]: [BlockLocker] Loading server plugin BlockLocker v1.14.1
+[01:30:20] [Server thread/INFO]: [BeautyQuests] Loading server plugin BeautyQuests v2.0.0
+[01:30:20] [Server thread/INFO]: [Minepacks] Loading server plugin Minepacks v2.5.5-T20260104173759
+[01:30:20] [Server thread/INFO]: [RedProtect] Loading server plugin RedProtect v8.1.3-SNAPSHOT
+[01:30:20] [Server thread/INFO]: [AxGraves] Loading server plugin AxGraves v1.26.2
+[01:30:20] [Server thread/INFO]: [Sit] Loading server plugin Sit v1.7.2
+[01:30:20] [Server thread/INFO]: [sleep-most] Loading server plugin sleep-most v5.7.0
+[01:30:20] [Server thread/INFO]: [StringDupersReturn] Loading server plugin StringDupersReturn v1.0.12
+[01:30:20] [Server thread/INFO]: [Geyser-Spigot] Loading server plugin Geyser-Spigot v2.9.4-SNAPSHOT
+[01:30:20] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
+[01:30:20] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
+[01:30:20] [Server thread/INFO]: [emotecraft] Loading server plugin emotecraft v3.2.0-b.build.143
+[01:30:21] [Server thread/INFO]: [Emotecraft] Loading Emotecraft as a paper plugin...
+[01:30:21] [Server thread/INFO]: [SetHome] Loading server plugin SetHome v6.0
+[01:30:21] [Server thread/INFO]: [CrazyEnchantments] Loading server plugin CrazyEnchantments v2.7.1
+[01:30:21] [Server thread/INFO]: [Shopkeepers] Loading server plugin Shopkeepers v2.26.0
+[01:30:21] [Server thread/INFO]: [Shopkeepers] Compatibility provider loaded: 1_21_R9_paper
+[01:30:21] [Server thread/INFO]: [Shopkeepers] Loading config.
+[01:30:21] [Server thread/INFO]: [Shopkeepers] Loading language file: language-en-default.yml
+[01:30:21] [Server thread/INFO]: [Shopkeepers] Registering WorldGuard flag 'allow-shop'.
+[01:30:21] [Server thread/INFO]: [Shopkeepers] Registering defaults.
+[01:30:21] [Server thread/INFO]: [Shopkeepers] Loaded all plugin classes (456 ms).
+[01:30:21] [Server thread/INFO]: [ItemEdit] Loading server plugin ItemEdit v3.7.8
+[01:30:21] [Server thread/INFO]: [InstantRestock] Loading server plugin InstantRestock v2.6.1
+[01:30:21] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[01:30:21] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.4.0+7381-3decaf0
+[01:30:21] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[01:30:21] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[01:30:22] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_21_11.PaperweightAdapter as the Bukkit adapter
+[01:30:22] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.5.36
+[01:30:22] [Server thread/INFO]:         __    
+[01:30:22] [Server thread/INFO]:   |    |__)   LuckPerms v5.5.36
+[01:30:22] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[01:30:22] [Server thread/INFO]: 
+[01:30:23] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[01:30:23] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[01:30:23] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[01:30:23] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1383ms)
+[01:30:23] [Server thread/INFO]: [BlockLocker] Enabling BlockLocker v1.14.1
+[01:30:23] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[01:30:23] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[01:30:23] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[01:30:23] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[01:30:23] [Server thread/INFO]: Preparing level "world"
+[01:30:24] [Server thread/INFO]: [ca.spottedleaf.moonrise.common.util.MoonriseConstants] NUMA enable flag is not set; however there is NUMA interaction support for this OS.
+[01:30:24] [Server thread/INFO]: [ca.spottedleaf.moonrise.common.util.MoonriseConstants] Detected 1 NUMA nodes.
+[01:30:26] [Server thread/INFO]: Loading 25 persistent chunks for world 'minecraft:overworld'...
+[01:30:26] [Server thread/INFO]: Preparing spawn area: 28%
+[01:30:26] [Server thread/INFO]: Prepared spawn area in 765 ms
+[01:30:26] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_nether'...
+[01:30:26] [Server thread/INFO]: Prepared spawn area in 1 ms
+[01:30:26] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_end'...
+[01:30:26] [Server thread/INFO]: Prepared spawn area in 0 ms
+[01:30:26] [Server thread/INFO]: Done preparing level "world" (3.053s)
+[01:30:26] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v7.0.16-beta-01+ce4622f
+[01:30:27] [Server thread/INFO]: [WorldGuard] (world) TNT ignition is PERMITTED.
+[01:30:27] [Server thread/INFO]: [WorldGuard] (world) Lighters are PERMITTED.
+[01:30:27] [Server thread/INFO]: [WorldGuard] (world) Lava fire is PERMITTED.
+[01:30:27] [Server thread/INFO]: [WorldGuard] (world) Fire spread is UNRESTRICTED.
+[01:30:27] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world'
+[01:30:27] [Server thread/INFO]: [WorldGuard] (world_nether) TNT ignition is PERMITTED.
+[01:30:27] [Server thread/INFO]: [WorldGuard] (world_nether) Lighters are PERMITTED.
+[01:30:27] [Server thread/INFO]: [WorldGuard] (world_nether) Lava fire is PERMITTED.
+[01:30:27] [Server thread/INFO]: [WorldGuard] (world_nether) Fire spread is UNRESTRICTED.
+[01:30:27] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_nether'
+[01:30:27] [Server thread/INFO]: [WorldGuard] (world_the_end) TNT ignition is PERMITTED.
+[01:30:27] [Server thread/INFO]: [WorldGuard] (world_the_end) Lighters are PERMITTED.
+[01:30:27] [Server thread/INFO]: [WorldGuard] (world_the_end) Lava fire is PERMITTED.
+[01:30:27] [Server thread/INFO]: [WorldGuard] (world_the_end) Fire spread is UNRESTRICTED.
+[01:30:27] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_the_end'
+[01:30:27] [Server thread/INFO]: [WorldGuard] Loading region data...
+[01:30:27] [Server thread/INFO]: [Multiverse-Core] Enabling Multiverse-Core v5.5.3
+[01:30:28] [Server thread/INFO]: [Multiverse-Core] API service loaded!
+[01:30:28] [Server thread/INFO]: [Multiverse-Core] Version 5.5.3 (API v5.5) Enabled - By dumptruckman, Rigby, fernferret, lithium3141, main--, benwoo1110 and Zax71
+[01:30:28] [Server thread/INFO]: [Multiverse-Core] Loving Multiverse-Core? Please consider supporting the project with a small donation: https://github.com/sponsors/Multiverse
+[01:30:28] [Server thread/INFO]: [MythicMobs] Enabling MythicMobs v5.11.2-6a371d59
+[01:30:28] [Server thread/INFO]: [MythicMobs] Loading MythicMobs for Paper (MC: 1.21.11)...
+[01:30:28] [Server thread/INFO]: [MythicMobs] The server is running Paper; enabled Paper exclusive functionality
+[01:30:30] [Server thread/INFO]: [MythicMobs] Mythic WorldGuard Support has been enabled!
+[01:30:32] [Server thread/INFO]: [MythicMobs] Loading Packs...
+[01:30:32] [Server thread/INFO]: [MythicMobs] Loading Items...
+[01:30:32] [Server thread/INFO]: [MythicMobs] Loading Item Groups...
+[01:30:32] [Server thread/INFO]: [MythicMobs] All items loaded after 42ms!
+[01:30:32] [Server thread/INFO]: [MythicMobs] Loading Skills...
+[01:30:32] [Server thread/INFO]: [MythicMobs] Loading Drop Tables...
+[01:30:32] [Server thread/INFO]: [MythicMobs] Loading Random Spawns...
+[01:30:33] [Server thread/INFO]: [MythicMobs] Loading Spawn Blocks...
+[01:30:33] [Server thread/INFO]: [MythicMobs] Second passes loaded after 18ms!
+[01:30:33] [Server thread/INFO]: [MythicMobs] ✓ Loaded 8 mobs.
+[01:30:33] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 vanilla mob overrides.
+[01:30:33] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob stacks.
+[01:30:33] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 skills.
+[01:30:33] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 random spawns.
+[01:30:33] [Server thread/INFO]: [MythicMobs] ✓ Loaded 3 mythic items.
+[01:30:33] [Server thread/INFO]: [MythicMobs] ✓ Loaded 2 drop tables.
+[01:30:33] [Server thread/INFO]: [MythicMobs] ✓ Loaded 0 mob spawners.
+[01:30:33] [Server thread/INFO]: [MythicMobs] MythicMobs configuration file loaded successfully.
+[01:30:33] [Server thread/INFO]: [MythicMobs] Started up bStats Metrics
+[01:30:33] [Server thread/INFO]: [MythicMobs] ✓ MythicMobs v5.11.2 ( build 6a371d59 ) has been successfully loaded!
+[01:30:33] [Server thread/INFO]: [FancyNpcs] Enabling FancyNpcs v2.9.2.344
+[01:30:33] [Server thread/WARN]: [org.mineskin.MineSkinClient] Creating MineSkinClient without API key
+[01:30:33] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.5-SNAPSHOT (b130-d73192f)
+[01:30:33] [FancyLogger/INFO]: [FancyNpcs] (Server thread) INFO: FancyNpcs (2.9.2.344) has been enabled.
+[01:30:34] [Server thread/INFO]: [Multiverse-Portals] Enabling Multiverse-Portals v5.2.1
+[01:30:34] [Server thread/INFO]: [Multiverse-Portals] 0 - Portals(s) loaded
+[01:30:34] [Server thread/INFO]: [Multiverse-Portals] Found WorldEdit. Using it for selections.
+[01:30:34] [Server thread/INFO]: [Multiverse-Portals] Version 5.2.1 (API v5.2) Enabled - By Rigby, fernferret and benwoo1110
+[01:30:34] [Server thread/INFO]: [TPA] Enabling TPA v3.2.7
+[01:30:34] [Server thread/INFO]: [voicechat] Enabling voicechat v2.6.12
+[01:30:34] [Server thread/INFO]: [voicechat] Initializing compatibility for version 1.21.11-R0.1
+[01:30:34] [Server thread/INFO]: [voicechat] Compatibility version 20
+[01:30:34] [Server thread/INFO]: [voicechat] Successfully initialized commodore command completion
+[01:30:34] [Server thread/INFO]: [BeautyQuests] Enabling BeautyQuests v2.0.0
+[01:30:34] [Server thread/INFO]: [BeautyQuests] ------------ BeautyQuests ------------
+[01:30:34] [Folia Async Scheduler Thread #1/INFO]: [TPA] 插件已成功加载！当前版本为：3.2.7
+[01:30:34] [Folia Async Scheduler Thread #1/INFO]: [TPA] 正在检查更新...
+[01:30:34] [Server thread/INFO]: [BeautyQuests] Loaded valid Paper internals access.
+[01:30:34] [Folia Async Scheduler Thread #1/INFO]: [TPA] 当前已是最新版本
+[01:30:35] [Server thread/INFO]: [BeautyQuests] Loaded language en_US (0.043s)!
+[01:30:35] [Server thread/INFO]: [WorldGuard] Registering session handler fr.skytasul.quests.integrations.worldguard.WorldGuardEntryHandler
+[01:30:35] [Server thread/INFO]: [Minepacks] Enabling Minepacks v2.5.5-T20260104173759
+[01:30:35] [Server thread/INFO]: [Minepacks] Starting Minepacks in standalone mode!
+[01:30:36] [Server thread/INFO]: [Minepacks] Config file successfully loaded.
+[01:30:36] [Server thread/WARN]: [Minepacks] Paper support is experimental! Use at your own risk!
+[01:30:36] [Server thread/WARN]: [Minepacks] No guarantee for data integrity! Backup constantly!
+[01:30:36] [Server thread/INFO]: [Minepacks] Language file successfully loaded. Language: english  Author: GeorgH93
+[01:30:36] [Server thread/INFO]: [Minepacks] Minepacks-Connection-Pool - Starting...
+[01:30:36] [Server thread/INFO]: [Minepacks] Minepacks-Connection-Pool - Start completed.
+[01:30:36] [Server thread/INFO]: [Minepacks] Item name language file successfully loaded. Language: english  Author: GeorgH93
+[01:30:36] [Server thread/INFO]: [Minepacks] Loading item translations ...
+[01:30:36] [Server thread/INFO]: [Minepacks] Finished loading item translations for 826 items.
+[01:30:36] [Server thread/INFO]: [Minepacks]  Minepacks has been enabled!  :) 
+[01:30:36] [Server thread/INFO]: [RedProtect] Enabling RedProtect v8.1.3-SNAPSHOT
+[01:30:36] [Server thread/INFO]: [RedProtect] Server version: 1.21.11-R0.1-SNAPSHOT
+[01:30:36] [Server thread/INFO]: [RedProtect] All configurations loaded!
+[01:30:36] [Server thread/INFO]: [RedProtect] Language file loaded - Using: EN-US
+[01:30:36] [Server thread/INFO]: [RedProtect] Registering commands...
+[01:30:37] [Server thread/INFO]: [RedProtect] Registering listeners...
+[01:30:37] [Server thread/INFO]: [RedProtect] WorldEdit found. Hooked.
+[01:30:37] [Server thread/INFO]: [RedProtect] This version is only compatible with server version running on 1.19+. WorldGuard not hooked!
+[01:30:37] [Server thread/INFO]: [RedProtect] - Loading world's regions...
+[01:30:37] [Server thread/INFO]: [RedProtect] - Loading world_nether's regions...
+[01:30:37] [Server thread/INFO]: [RedProtect] - Loading world_the_end's regions...
+[01:30:37] [Server thread/INFO]: [RedProtect] Auto-save Scheduler: Saving file database every 60 minutes!
+[01:30:37] [Server thread/INFO]: [RedProtect] There are 0 regions on (file) database!
+[01:30:37] [Server thread/INFO]: [RedProtect] Helper version: Latest
+[01:30:37] [Server thread/INFO]: [RedProtect] Loading GuiFlags for 1.14+
+[01:30:37] [Server thread/INFO]: [RedProtect] Metrics enabled! See our stats here: https://bstats.org/plugin/bukkit/RedProtect
+[01:30:37] [Server thread/INFO]: [RedProtect] Loading API...
+[01:30:37] [Server thread/INFO]: [RedProtect] API Loaded!
+[01:30:37] [Server thread/INFO]:  _   _  _   _   _   _  _ _  _  _ _ _  _
+[01:30:37] [Server thread/INFO]: |_| |_ | \ |_| |_| | |  |  |_ |   |  |_|
+[01:30:37] [Server thread/INFO]: | \ |_ |_/ |   | \ |_|  |  |_ |_  |  |_|
+[01:30:37] [Server thread/INFO]: » RedProtect v8.1.3-SNAPSHOT enabled
+[01:30:37] [Server thread/INFO]: 
+[01:30:37] [Server thread/INFO]: [AxGraves] Enabling AxGraves v1.26.2
+[01:30:37] [Server thread/INFO]: [Sit] Enabling Sit v1.7.2
+[01:30:37] [Server thread/INFO]: [sleep-most] Enabling sleep-most v5.7.0
+[01:30:37] [Server thread/INFO]: SleepMost Loaded module: me.mrgeneralq.sleepmost.paper.PaperModule
+[01:30:37] [Server thread/INFO]: SleepMost Loaded module: me.mrgeneralq.sleepmost.spigot.SpigotModule
+[01:30:37] [Server thread/INFO]: [StringDupersReturn] Enabling StringDupersReturn v1.0.12
+[01:30:37] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.9.4-SNAPSHOT
+[01:30:39] [Server thread/INFO]: [emotecraft] Enabling emotecraft v3.2.0-b.build.143
+[01:30:39] [Server thread/INFO]: [SetHome] Enabling SetHome v6.0
+[01:30:39] [Server thread/INFO]: [CrazyEnchantments] Enabling CrazyEnchantments v2.7.1
+[01:30:39] [Server thread/INFO]: [CrazyEnchantments] Loading the config.yml
+[01:30:39] [Server thread/INFO]: [CrazyEnchantments] Successfully loaded config.yml
+[01:30:39] [Server thread/INFO]: [CrazyEnchantments] Loading the BlockList.yml
+[01:30:39] [Server thread/INFO]: [CrazyEnchantments] Successfully loaded BlockList.yml
+[01:30:39] [Server thread/INFO]: [CrazyEnchantments] Loading the HeadMap.yml
+[01:30:39] [Server thread/INFO]: [CrazyEnchantments] Successfully loaded HeadMap.yml
+[01:30:39] [Server thread/INFO]: [CrazyEnchantments] Loading the Data.yml
+[01:30:39] [Server thread/INFO]: [CrazyEnchantments] Successfully loaded Data.yml
+[01:30:39] [Server thread/INFO]: [CrazyEnchantments] Loading the Enchantments.yml
+[01:30:39] [Server thread/INFO]: [CrazyEnchantments] Successfully loaded Enchantments.yml
+[01:30:39] [Server thread/INFO]: [CrazyEnchantments] Loading the GKitz.yml
+[01:30:39] [Server thread/INFO]: [CrazyEnchantments] Successfully loaded GKitz.yml
+[01:30:39] [Server thread/INFO]: [CrazyEnchantments] Loading the Messages.yml
+[01:30:39] [Server thread/INFO]: [CrazyEnchantments] Successfully loaded Messages.yml
+[01:30:39] [Server thread/INFO]: [CrazyEnchantments] Loading the Enchantment-Types.yml
+[01:30:39] [Server thread/INFO]: [CrazyEnchantments] Successfully loaded Enchantment-Types.yml
+[01:30:39] [Server thread/INFO]: [CrazyEnchantments] Loading the Tinker.yml
+[01:30:39] [Server thread/INFO]: [CrazyEnchantments] Successfully loaded Tinker.yml
+[01:30:39] [Server thread/INFO]: [CrazyEnchantments]: === CrazyEnchantment Hook Status ===
+[01:30:39] [Server thread/INFO]: [CrazyEnchantments]: FACTIONS_UUID NOT FOUND
+[01:30:39] [Server thread/INFO]: [CrazyEnchantments]: GRIEF_PREVENTION NOT FOUND
+[01:30:39] [Server thread/INFO]: [CrazyEnchantments]: TOWNYADVANCED NOT FOUND
+[01:30:39] [Server thread/INFO]: [CrazyEnchantments]: VAULT NOT FOUND
+[01:30:39] [Server thread/INFO]: [CrazyEnchantments]: WORLDGUARD FOUND
+[01:30:39] [Server thread/INFO]: [CrazyEnchantments]: MCMMO NOT FOUND
+[01:30:39] [Server thread/INFO]: [CrazyEnchantments]: LANDS NOT FOUND
+[01:30:39] [Server thread/INFO]: [CrazyEnchantments]: PLOT_SQUARED NOT FOUND
+[01:30:39] [Server thread/INFO]: [CrazyEnchantments]: WORLDEDIT FOUND
+[01:30:39] [Server thread/INFO]: [CrazyEnchantments]: SUPERIORSKYBLOCK NOT FOUND
+[01:30:39] [Server thread/INFO]: [CrazyEnchantments] G-Kitz support is now enabled.
+[01:30:39] [Server thread/INFO]: [Shopkeepers] Enabling Shopkeepers v2.26.0
+[01:30:40] [Server thread/INFO]: [Shopkeepers] Loading the data of 15 shopkeepers ...
+[01:30:40] [Server thread/INFO]: [ItemEdit] Enabling ItemEdit v3.7.8
+[01:30:40] [Server thread/INFO]: [ItemEdit] Hooking into MiniMessageAPI see https://webui.advntr.dev/
+[01:30:40] [Server thread/INFO]: [ItemEdit] Selected Storage Type: YAML
+[01:30:40] [Server thread/INFO]: [ItemEdit] Unable to hook into Vault
+[01:30:40] [Server thread/INFO]: [ItemEdit] Hooking into MythicMobs
+[01:30:40] [Server thread/INFO]: [ItemEdit] # Enabled (took 321 ms)
+[01:30:40] [Server thread/INFO]: [InstantRestock] Enabling InstantRestock v2.6.1
+[01:30:40] [Server thread/INFO]: [InstantRestock] Enabled InstantRestock!
+[01:30:40] [Server thread/INFO]: [spark] Starting background profiler...
+[01:30:41] [Server thread/WARN]: Could not register alias example_panel because it contains commands that do not exist: commandpanel
+[01:30:41] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[01:30:41] [Server thread/INFO]: [Geyser-Spigot] 
+[01:30:41] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.9.4-b1097 (git-master-2f1cb9b)
+[01:30:41] [Server thread/INFO]: [Geyser-Spigot] 
+[01:30:41] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[01:30:45] [GeyserServer-3-1/INFO]: [Geyser-Spigot] Started Geyser on UDP port 19132
+[01:30:45] [Server thread/INFO]: [Geyser-Spigot] Done (3.583s)! Run /geyser help for help!
+[01:30:45] [Server thread/INFO]: Running delayed init tasks
+[01:30:45] [Server thread/INFO]: Done (47.711s)! For help, type "help"
+[01:30:45] [Server thread/INFO]: [voicechat] Loading plugins
+[01:30:45] [Server thread/INFO]: [voicechat] Loaded 0 plugin(s)
+[01:30:45] [Server thread/INFO]: [voicechat] Initializing plugins
+[01:30:45] [Server thread/INFO]: [voicechat] Initialized 0 plugin(s)
+[01:30:45] [Server thread/WARN]: [voicechat] Running in offline mode - Voice chat encryption is not secure!
+[01:30:45] [VoiceChatServerThread/INFO]: [voicechat] Voice chat server started at port 24454
+[01:30:45] [Paper Async Task Handler Thread - 1/INFO]: *** Currently you are 28 build(s) behind ***
+[01:30:45] [Paper Async Task Handler Thread - 1/INFO]: *** It is highly recommended to download the latest build from https://papermc.io/downloads/paper ***
+[01:30:45] [Server thread/INFO]: [Not Secure] [Server] Veinminer Loaded!
+[01:30:45] [Server thread/INFO]: [Not Secure] [Server] Veinminer-Enchantment Loaded
+[01:30:45] [Server thread/INFO]: [Not Secure] [Server] Please note: This is an addon, Veinminer needs to be installed too (https://modrinth.com/project/veinminer)
+[01:30:47] [Craft Scheduler Thread - 2 - AxGraves/INFO]: AxGraves » There is a new version of AxGraves available! (current: 1.26.2 | latest: 1.27.0)
+[01:30:50] [Server thread/INFO]: [BeautyQuests] 7 quests loaded (0.077s)!
+[01:30:50] [Server thread/INFO]: [BeautyQuests] Periodic saves task started (18000 ticks). Task ID: 53
+[01:35:49] [User Authenticator #0/INFO]: UUID of player Lastsamurai is 12f77f1f-1c8a-3c37-9e32-8784c4fa9c6a
+[01:35:49] [Server thread/INFO]: [HorriblePlayerLoginEventHack] You have plugins listening to the PlayerLoginEvent, this will cause re-configuration APIs to be unavailable: [LuckPerms, WorldGuard]
+[01:35:56] [Server thread/INFO]: Lastsamurai joined the game
+[01:35:56] [Server thread/INFO]: Lastsamurai[/100.73.117.118:54150] logged in with entity id 16 at ([world]-1420.1969984558766, 76.0, 1113.3574391886182)
+[01:36:06] [Server thread/INFO]: Lastsamurai fell from a high place
+[01:36:14] [Server thread/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[01:36:19] [Server thread/INFO]: Lastsamurai fell from a high place
+[01:36:31] [Server thread/INFO]: Lastsamurai fell from a high place
+[01:36:48] [Server thread/INFO]: Lastsamurai fell from a high place
+[01:36:54] [Server thread/INFO]: Lastsamurai fell from a high place
+[01:37:00] [Server thread/INFO]: Lastsamurai fell from a high place
+[01:43:35] [Server thread/INFO]: Villager Villager['Villager'/668, uuid='2f674afe-590a-421a-9922-9b517dd91c14', l='ServerLevel[world]', x=965.33, y=47.00, z=907.50, cpos=[60, 56], tl=6644, v=true] died, message: 'Villager hit the ground too hard'
+[01:45:51] [Craft Scheduler Thread - 68 - BeautyQuests/INFO]: [BeautyQuests] Datas saved ~ periodic save
+[01:46:17] [Server thread/INFO]: Named entity WitherSkeleton['Skeletal Knight'/1463, uuid='9a29b93b-50cb-4f94-9116-0b2a82f624d7', l='ServerLevel[world]', x=1101.50, y=84.00, z=1050.50, cpos=[68, 65], tl=447, v=true] died: Skeletal Knight suffocated in a wall
+[01:47:08] [User Authenticator #1/INFO]: UUID of player VenaticWinner67 is 27624550-5762-38db-a0a7-5ccd77095ef1
+[01:47:14] [Server thread/INFO]: VenaticWinner67 joined the game
+[01:47:14] [Server thread/INFO]: VenaticWinner67[/100.87.58.7:52257] logged in with entity id 1547 at ([world]-1272.0178990685445, 68.0, 860.3572936445605)
+[01:47:20] [Server thread/INFO]: VenaticWinner67 fell from a high place
+[01:47:37] [Server thread/INFO]: Villager Villager['Villager'/693, uuid='ddd72d30-3e5c-486c-97ec-3fa79f4f3881', l='ServerLevel[world]', x=965.34, y=47.00, z=907.36, cpos=[60, 56], tl=11484, v=true] died, message: 'Villager hit the ground too hard'
+[01:47:42] [Server thread/INFO]: [VenaticWinner67: Set own game mode to Creative Mode]
+[01:47:54] [Async Chat Thread - #2/INFO]: [Not Secure] <VenaticWinner67> que frutas
+[01:47:54] [Async Chat Thread - #2/INFO]: [Not Secure] <Lastsamurai> wtf
+[01:48:00] [Server thread/INFO]: [VenaticWinner67: Set own game mode to Survival Mode]
+[01:48:22] [Async Chat Thread - #2/INFO]: [Not Secure] <VenaticWinner67> dc
+[01:48:31] [Async Chat Thread - #2/INFO]: [Not Secure] <Lastsamurai> ya
+[01:49:37] [Server thread/INFO]: Named entity WitherSkeleton['Skeletal Knight'/1798, uuid='2d51b74a-ef80-43be-915e-d1762004f5be', l='ServerLevel[world]', x=1014.87, y=20.00, z=991.50, cpos=[63, 61], tl=453, v=true] died: Skeletal Knight suffocated in a wall
+[01:49:43] [Server thread/INFO]: VenaticWinner67 issued server command: /npc teleport npc6
+[01:49:52] [Server thread/INFO]: [VenaticWinner67: Set own game mode to Creative Mode]
+[01:50:14] [Server thread/INFO]: [VenaticWinner67: Set own game mode to Survival Mode]
+[01:50:22] [Server thread/INFO]: VenaticWinner67 issued server command: /tp Lastsamurai VenaticWinner67
+[01:50:22] [Server thread/INFO]: [VenaticWinner67: Teleported Lastsamurai to VenaticWinner67]
+[01:50:39] [Server thread/INFO]: VenaticWinner67 issued server command: /tpa:delspawn
+[01:50:45] [Server thread/INFO]: [VenaticWinner67: Set own game mode to Creative Mode]
+[01:50:58] [Server thread/INFO]: VenaticWinner67 issued server command: /tpa:spawn
+[01:51:01] [Server thread/INFO]: VenaticWinner67 issued server command: /tpa:spawn
+[01:51:11] [Server thread/INFO]: VenaticWinner67 issued server command: /setworldspawn -1532 101 1092
+[01:51:11] [Server thread/INFO]: [VenaticWinner67: Set the world spawn point to -1532, 101, 1092 [0.0, 0.0] in minecraft:overworld]
+[01:51:15] [Server thread/INFO]: VenaticWinner67 issued server command: /tpa:spawn
+[01:51:33] [Server thread/INFO]: VenaticWinner67 issued server command: /tpa:setspawn
+[01:51:45] [Server thread/INFO]: VenaticWinner67 issued server command: /tpa:spawn
+[01:51:45] [Server thread/INFO]: spawn_name
+[01:52:07] [Server thread/INFO]: VenaticWinner67 issued server command: /tpa:delspawn
+[01:52:10] [Server thread/INFO]: VenaticWinner67 issued server command: /tpa:spawn
+[01:52:27] [Server thread/INFO]: VenaticWinner67 issued server command: /setworldspawn
+[01:52:27] [Server thread/INFO]: [VenaticWinner67: Set the world spawn point to -1533, 101, 1098 [0.0, 0.0] in minecraft:overworld]
+[01:53:01] [Server thread/INFO]: [VenaticWinner67: Set own game mode to Survival Mode]
+[01:53:10] [Server thread/INFO]: VenaticWinner67 lost connection: Disconnected
+[01:53:10] [Server thread/INFO]: [voicechat] Disconnecting client VenaticWinner67
+[01:53:10] [Server thread/INFO]: VenaticWinner67 left the game
+[01:53:12] [User Authenticator #2/INFO]: UUID of player VenaticWinner67 is 27624550-5762-38db-a0a7-5ccd77095ef1
+[01:53:14] [Server thread/INFO]: VenaticWinner67 joined the game
+[01:53:14] [Server thread/INFO]: VenaticWinner67[/100.87.58.7:52332] logged in with entity id 3390 at ([world]-1367.169816241883, 70.0, 999.372991936106)
+[01:54:10] [Server thread/INFO]: VenaticWinner67 issued server command: /quest edit 8
+[01:54:27] [Server thread/INFO]: VenaticWinner67 issued server command: /quest edit 7
+[01:54:35] [Server thread/INFO]: VenaticWinner67 issued server command: /quest edit 6
+[01:54:55] [Server thread/INFO]: VenaticWinner67 issued server command: /quest start Lastsamurai 6
+[01:55:04] [Server thread/INFO]: VenaticWinner67 issued server command: /quest start VenaticWinner67 6
+[01:58:16] [Server thread/INFO]: VenaticWinner67 issued server command: /title @a subtitle Las misiones del pueblo se restablecieron
+[01:58:48] [Server thread/INFO]: VenaticWinner67 issued server command: /title @s subtitle Lasmisionesdelpuebloserestablecieron
+[01:58:48] [Server thread/INFO]: [VenaticWinner67: Showing new subtitle for VenaticWinner67]
+[01:59:09] [Server thread/INFO]: Named entity WitherSkeleton['Skeletal Knight'/4279, uuid='6782dd60-021c-4f89-a8a7-bef8a6ce67aa', l='ServerLevel[world]', x=-1451.13, y=62.00, z=1012.50, cpos=[-91, 63], tl=446, v=true] died: Skeletal Knight suffocated in a wall
+[01:59:31] [Server thread/INFO]: VenaticWinner67 issued server command: /title @s actionbar las
+[01:59:31] [Server thread/INFO]: [VenaticWinner67: Showing new actionbar title for VenaticWinner67]
+[01:59:43] [Server thread/INFO]: VenaticWinner67 issued server command: /title @a clear
+[01:59:43] [Server thread/INFO]: [VenaticWinner67: Cleared titles for 2 players]
+[02:00:51] [Craft Scheduler Thread - 159 - BeautyQuests/INFO]: [BeautyQuests] Datas saved ~ periodic save
+[02:03:08] [Server thread/INFO]: Sign Spy - Location: x: -1367, y: 70, z: 983, world: world
+[02:03:08] [Server thread/INFO]: Player: VenaticWinner67
+[02:03:08] [Server thread/INFO]: Lines - 1: [private - 2: 
+[02:03:08] [Server thread/INFO]: Lines - 3:  - 4: 
+[02:03:26] [Server thread/INFO]: Sign Spy - Location: x: -1367, y: 70, z: 983, world: world
+[02:03:26] [Server thread/INFO]: Player: VenaticWinner67
+[02:03:26] [Server thread/INFO]: Lines - 1: [Private] - 2: VenaticWinner67
+[02:03:26] [Server thread/INFO]: Lines - 3:  - 4: 
+[02:03:31] [Server thread/INFO]: Sign Spy - Location: x: -1367, y: 70, z: 983, world: world
+[02:03:31] [Server thread/INFO]: Player: VenaticWinner67
+[02:03:31] [Server thread/INFO]: Lines - 1: [Private] - 2: VenaticWinner67
+[02:03:31] [Server thread/INFO]: Lines - 3:  - 4: 
+[02:03:33] [Server thread/INFO]: Sign Spy - Location: x: -1367, y: 70, z: 983, world: world
+[02:03:33] [Server thread/INFO]: Player: VenaticWinner67
+[02:03:33] [Server thread/INFO]: Lines - 1: [Private] - 2: VenaticWinner67
+[02:03:33] [Server thread/INFO]: Lines - 3:  - 4: 
+[02:03:53] [Server thread/INFO]: Sign Spy - Location: x: -1367, y: 70, z: 983, world: world
+[02:03:53] [Server thread/INFO]: Player: VenaticWinner67
+[02:03:53] [Server thread/INFO]: Lines - 1: [private] - 2: VenaticWinner67
+[02:03:53] [Server thread/INFO]: Lines - 3:  - 4: 
+[02:04:35] [Server thread/INFO]: Sign Spy - Location: x: -1367, y: 70, z: 983, world: world
+[02:04:35] [Server thread/INFO]: Player: VenaticWinner67
+[02:04:35] [Server thread/INFO]: Lines - 1: [Private] - 2: VenaticWinner67
+[02:04:35] [Server thread/INFO]: Lines - 3:  - 4: 
+[02:05:10] [Server thread/INFO]: Sign Spy - Location: x: -1367, y: 71, z: 982, world: world
+[02:05:10] [Server thread/INFO]: Player: VenaticWinner67
+[02:05:10] [Server thread/INFO]: Lines - 1: [Private] - 2: VenaticWinner67
+[02:05:10] [Server thread/INFO]: Lines - 3:  - 4: 
+[02:10:14] [Server thread/INFO]: Named entity WitherSkeleton['Skeletal Knight'/6814, uuid='e6beabfe-f266-453c-935b-700346f4ad0b', l='ServerLevel[world]', x=-1448.50, y=62.00, z=1012.50, cpos=[-91, 63], tl=445, v=true] died: Skeletal Knight suffocated in a wall
+[02:11:14] [Server thread/INFO]: Named entity WitherSkeleton['Skeletal Knight'/7061, uuid='7929debf-481e-49b3-9683-38f0fefae95d', l='ServerLevel[world]', x=-1344.50, y=20.00, z=972.50, cpos=[-85, 60], tl=441, v=true] died: Skeletal Knight suffocated in a wall
+[02:15:06] [Server thread/INFO]: Named entity WitherSkeleton['Skeletal Knight'/8056, uuid='14a7b004-b6d7-4371-96a0-47cace40e1d3', l='ServerLevel[world]', x=-1161.50, y=-1.00, z=1162.50, cpos=[-73, 72], tl=453, v=true] died: Skeletal Knight suffocated in a wall
+[02:15:52] [Craft Scheduler Thread - 249 - BeautyQuests/INFO]: [BeautyQuests] Datas saved ~ periodic save
+[02:16:06] [Server thread/INFO]: VenaticWinner67 has completed the challenge [Cover Me in Debris]
+[02:21:08] [Server thread/INFO]: Named entity WitherSkeleton['Skeletal Knight'/10674, uuid='233531af-7eea-4454-8b19-2d7814ee79ef', l='ServerLevel[world]', x=-957.50, y=-21.00, z=1540.50, cpos=[-60, 96], tl=448, v=true] died: Skeletal Knight suffocated in a wall
+[02:21:17] [Server thread/WARN]: [BeautyQuests] Trying to finish stage stage 0:0 (MOBS) of quest 6, branch 0 for player Lastsamurai but was not in progress.
+[02:21:59] [Server thread/INFO]: Named entity WitherSkeleton['Skeletal Knight'/11478, uuid='314cfeef-3779-491a-b59d-262b8a3cb54c', l='ServerLevel[world]', x=-817.50, y=13.00, z=1822.50, cpos=[-52, 113], tl=447, v=true] died: Skeletal Knight suffocated in a wall
+[02:23:33] [Server thread/INFO]: VenaticWinner67 issued server command: /tpa Lastsamurai
+[02:23:44] [Server thread/INFO]: Lastsamurai issued server command: /tpaccept
+[02:30:52] [Craft Scheduler Thread - 339 - BeautyQuests/INFO]: [BeautyQuests] Datas saved ~ periodic save
+[02:32:51] [Server thread/INFO]: Named entity WitherSkeleton['Skeletal Knight'/15559, uuid='8dde2d69-f75f-4578-9d20-4727f9ed212a', l='ServerLevel[world]', x=-1474.87, y=63.00, z=1111.50, cpos=[-93, 69], tl=445, v=true] died: Skeletal Knight suffocated in a wall
+[02:32:57] [Server thread/INFO]: Lastsamurai was slain by Skeleton King
+[02:34:38] [Server thread/INFO]: Named entity Skeleton['Skeletal Minion'/16275, uuid='2c9ae40a-c520-4c7c-b784-af2ad2e7e37b', l='ServerLevel[world]', x=-1379.22, y=70.00, z=969.49, cpos=[-87, 60], tl=93, v=true] died: Skeletal Minion was shot by Skeletal Minion
+[02:34:41] [Server thread/INFO]: Named entity Skeleton['Skeletal Minion'/16277, uuid='9453ccc0-fae9-47d7-8b30-0482ccd815af', l='ServerLevel[world]', x=-1378.35, y=70.00, z=977.18, cpos=[-87, 61], tl=140, v=true] died: Skeletal Minion burned to death
+[02:34:44] [Server thread/INFO]: Named entity Skeleton['Skeletal Minion'/16278, uuid='0f993209-8064-4258-afac-709970eb8223', l='ServerLevel[world]', x=-1374.07, y=70.00, z=976.17, cpos=[-86, 61], tl=194, v=true] died: Skeletal Minion burned to death
+[02:35:44] [Server thread/INFO]: Named entity Skeleton['Skeletal Minion'/16444, uuid='9a93b169-056d-400c-87b8-0b25c9939edb', l='ServerLevel[world]', x=-1367.05, y=70.00, z=1024.68, cpos=[-86, 64], tl=192, v=true] died: Skeletal Minion burned to death
+[02:35:44] [Server thread/INFO]: Named entity Skeleton['Skeletal Minion'/16449, uuid='ca0c748c-0072-4f1e-ae17-0d4e644c5979', l='ServerLevel[world]', x=-1367.54, y=70.00, z=1025.96, cpos=[-86, 64], tl=174, v=true] died: Skeletal Minion burned to death
+[02:35:44] [Server thread/INFO]: Named entity Skeleton['Skeletal Minion'/16443, uuid='92b123f6-50a5-4f9b-8b6a-13199b830ede', l='ServerLevel[world]', x=-1367.36, y=70.00, z=1028.23, cpos=[-86, 64], tl=197, v=true] died: Skeletal Minion burned to death
+[02:35:47] [Server thread/INFO]: Named entity Skeleton['Skeletal Minion'/16455, uuid='29afafd2-da0b-47a3-ac05-9d4da395f492', l='ServerLevel[world]', x=-1358.08, y=70.00, z=1023.47, cpos=[-85, 63], tl=204, v=true] died: Skeletal Minion burned to death
+[02:35:47] [Server thread/INFO]: Named entity Skeleton['Skeletal Minion'/16456, uuid='1620ad82-e762-4d0a-b89c-61baa72a643e', l='ServerLevel[world]', x=-1359.80, y=70.00, z=1019.28, cpos=[-85, 63], tl=220, v=true] died: Skeletal Minion burned to death
+[02:35:48] [Server thread/INFO]: Named entity Skeleton['Skeletal Minion'/16450, uuid='cc5c443f-91ba-486a-8c0a-7e868b6491a0', l='ServerLevel[world]', x=-1370.53, y=70.00, z=1028.49, cpos=[-86, 64], tl=245, v=true] died: Skeletal Minion burned to death
+[02:36:09] [Server thread/INFO]: Named entity Skeleton['Skeletal Minion'/16613, uuid='baeaae9d-0e2f-46b6-9031-1ce7973878f8', l='ServerLevel[world]', x=-1356.08, y=70.00, z=995.72, cpos=[-85, 62], tl=55, v=true] died: Skeletal Minion was slain by VenaticWinner67 using [|INFERNAL SWORD|]
+[02:36:10] [Server thread/INFO]: Named entity Skeleton['Skeletal Minion'/16614, uuid='3dda02a9-505b-41a6-b93b-e03ee1a9e0ce', l='ServerLevel[world]', x=-1353.92, y=70.00, z=994.18, cpos=[-85, 62], tl=66, v=true] died: Skeletal Minion was slain by VenaticWinner67 using [|INFERNAL SWORD|]
+[02:36:10] [Server thread/INFO]: Named entity Skeleton['Skeletal Minion'/16604, uuid='9c556bbe-7c45-43a3-891a-d407942cef75', l='ServerLevel[world]', x=-1355.53, y=70.00, z=997.59, cpos=[-85, 62], tl=90, v=true] died: Skeletal Minion was burned to a crisp while fighting Skeletal Minion
+[02:36:13] [Server thread/INFO]: Named entity Skeleton['Skeletal Minion'/16605, uuid='81168f17-f00f-465e-bf10-e761ec4cc73e', l='ServerLevel[world]', x=-1351.49, y=70.00, z=1000.76, cpos=[-85, 62], tl=146, v=true] died: Skeletal Minion burned to death
+[02:36:17] [Server thread/INFO]: Named entity Skeleton['Skeletal Minion'/16626, uuid='735da652-e7ea-4e65-8dc9-1ac5482ae46e', l='ServerLevel[world]', x=-1348.51, y=70.00, z=989.32, cpos=[-85, 61], tl=192, v=true] died: Skeletal Minion burned to death
+[02:36:18] [Server thread/INFO]: Named entity Skeleton['Skeletal Minion'/16625, uuid='f923a211-5d4d-46bf-aa1e-bc253b8de650', l='ServerLevel[world]', x=-1355.21, y=70.00, z=996.19, cpos=[-85, 62], tl=214, v=true] died: Skeletal Minion burned to death
+[02:36:30] [Server thread/INFO]: Named entity WitherSkeleton['Skeleton King'/15837, uuid='a852095f-fb32-4acb-b9f1-67a3b860222a', l='ServerLevel[world]', x=-1347.72, y=70.00, z=968.32, cpos=[-85, 60], tl=4232, v=true] died: Skeleton King was slain by VenaticWinner67 using [|INFERNAL SWORD|]
+[02:36:33] [Server thread/INFO]: Named entity Skeleton['Skeletal Minion'/16286, uuid='d27b3237-1a86-452c-a6af-6559dddb4d4c', l='ServerLevel[world]', x=-1366.45, y=70.00, z=995.30, cpos=[-86, 62], tl=2355, v=true] died: Skeletal Minion was slain by Lastsamurai
+[02:41:38] [Async Chat Thread - #3/INFO]: [Not Secure] <VenaticWinner67> Minecraft ponme en creativo
+[02:41:56] [Async Chat Thread - #3/INFO]: [Not Secure] <VenaticWinner67> slash barrita creativo
+[02:43:40] [Server thread/INFO]: Named entity WitherSkeleton['Skeletal Knight'/19164, uuid='9b1220bf-fae1-4b42-9530-806840662822', l='ServerLevel[world]', x=-1226.50, y=-25.00, z=1188.50, cpos=[-77, 74], tl=455, v=true] died: Skeletal Knight suffocated in a wall
+[02:45:52] [Craft Scheduler Thread - 429 - BeautyQuests/INFO]: [BeautyQuests] Datas saved ~ periodic save
+[02:47:03] [Server thread/INFO]: Lastsamurai issued server command: /tpa
+[02:47:19] [Server thread/INFO]: Lastsamurai issued server command: /tpa VenaticWinner67
+[02:47:39] [Server thread/INFO]: VenaticWinner67 issued server command: /tpaccept
+[02:52:04] [Server thread/INFO]: Named entity WitherSkeleton['Skeletal Knight'/22156, uuid='64e2d7a2-4626-4c3a-91fc-bb85913827b6', l='ServerLevel[world]', x=-1095.50, y=-8.00, z=1076.50, cpos=[-69, 67], tl=456, v=true] died: Skeletal Knight suffocated in a wall
+[02:56:45] [Server thread/INFO]: Lastsamurai issued server command: /tpa VenaticWinner67
+[02:56:53] [Server thread/INFO]: VenaticWinner67 issued server command: /tpaccept
+[02:59:59] [Server thread/INFO]: VenaticWinner67 issued server command: /tpa Lastsamurai
+[03:00:17] [Server thread/INFO]: Lastsamurai issued server command: /tpaccept
+[03:00:52] [Craft Scheduler Thread - 519 - BeautyQuests/INFO]: [BeautyQuests] Datas saved ~ periodic save
+[03:02:30] [Server thread/INFO]: VenaticWinner67 lost connection: Disconnected
+[03:02:30] [Server thread/INFO]: [voicechat] Disconnecting client VenaticWinner67
+[03:02:30] [Server thread/INFO]: VenaticWinner67 left the game
+[03:04:50] [Server thread/INFO]: Named entity WitherSkeleton['Skeletal Knight'/26209, uuid='1e4533bd-769f-441f-abc1-97ac7ef2a2b7', l='ServerLevel[world]', x=-1349.50, y=14.00, z=936.50, cpos=[-85, 58], tl=455, v=true] died: Skeletal Knight suffocated in a wall

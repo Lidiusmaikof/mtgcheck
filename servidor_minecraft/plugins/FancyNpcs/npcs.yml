@@ -1,0 +1,293 @@
+npcs:
+  91fdc3c7-5dba-4916-b3d5-5e592910b509:
+    name: npc1
+    creator: 27624550-5762-38db-a0a7-5ccd77095ef1
+    displayName: '&l&eWalberto'
+    type: PLAYER
+    location:
+      world: world
+      x: -1267.5
+      y: 68.0
+      z: 827.5
+      yaw: -34.07617
+      pitch: 8.611611
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: true
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    visibility: ALL
+    skin:
+      mirrorSkin: false
+      identifier: mrbrest_fent69
+      variant: AUTO
+    equipment:
+      HEAD:
+        ==: org.bukkit.inventory.ItemStack
+        id: minecraft:air
+        DataVersion: 4671
+        schema_version: 1
+      MAINHAND:
+        ==: org.bukkit.inventory.ItemStack
+        DataVersion: 4671
+        id: minecraft:iron_sword
+        count: 1
+        schema_version: 1
+      LEGS:
+        ==: org.bukkit.inventory.ItemStack
+        DataVersion: 4671
+        id: minecraft:chainmail_leggings
+        count: 1
+        schema_version: 1
+      CHEST:
+        ==: org.bukkit.inventory.ItemStack
+        id: minecraft:air
+        DataVersion: 4671
+        schema_version: 1
+      FEET:
+        ==: org.bukkit.inventory.ItemStack
+        DataVersion: 4671
+        id: minecraft:chainmail_boots
+        count: 1
+        schema_version: 1
+      OFFHAND:
+        ==: org.bukkit.inventory.ItemStack
+        id: minecraft:air
+        DataVersion: 4671
+        schema_version: 1
+    actions:
+      RIGHT_CLICK:
+        '1':
+          action: message
+          value: '&e&lWalberto: &a&lHola! Forastero'
+  ca138b69-f1c4-4370-8ff0-67bf051b57bd:
+    name: npc2
+    creator: 27624550-5762-38db-a0a7-5ccd77095ef1
+    displayName: '&4&lGuardia Nordico'
+    type: PLAYER
+    location:
+      world: world
+      x: -1326.5
+      y: 68.0
+      z: 850.5
+      yaw: 88.487366
+      pitch: 8.445351
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: true
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    visibility: ALL
+    skin:
+      mirrorSkin: false
+      identifier: MoonKnight2519
+      variant: AUTO
+    equipment:
+      HEAD:
+        ==: org.bukkit.inventory.ItemStack
+        DataVersion: 4671
+        id: minecraft:netherite_helmet
+        count: 1
+        schema_version: 1
+      CHEST:
+        ==: org.bukkit.inventory.ItemStack
+        DataVersion: 4671
+        id: minecraft:netherite_chestplate
+        count: 1
+        schema_version: 1
+      LEGS:
+        ==: org.bukkit.inventory.ItemStack
+        DataVersion: 4671
+        id: minecraft:netherite_leggings
+        count: 1
+        schema_version: 1
+      OFFHAND:
+        ==: org.bukkit.inventory.ItemStack
+        DataVersion: 4671
+        id: minecraft:shield
+        count: 1
+        schema_version: 1
+      FEET:
+        ==: org.bukkit.inventory.ItemStack
+        DataVersion: 4671
+        id: minecraft:netherite_boots
+        count: 1
+        schema_version: 1
+      MAINHAND:
+        ==: org.bukkit.inventory.ItemStack
+        DataVersion: 4671
+        id: minecraft:netherite_sword
+        count: 1
+        schema_version: 1
+    actions:
+      RIGHT_CLICK:
+        '1':
+          action: message
+          value: '&4&lGuardia Nordico: &6&lBienvenidos a Pueblo Comercio!'
+  2b9f3562-9e6e-4279-b690-d939bf9d3aaa:
+    name: npc3
+    creator: 27624550-5762-38db-a0a7-5ccd77095ef1
+    displayName: '&4&lGuardia Nordico'
+    type: PLAYER
+    location:
+      world: world
+      x: -1326.5
+      y: 68.0
+      z: 855.5
+      yaw: 92.68689
+      pitch: 28.312372
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: true
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    visibility: ALL
+    skin:
+      mirrorSkin: false
+      identifier: MoonKnight2519
+      variant: AUTO
+    equipment:
+      HEAD:
+        ==: org.bukkit.inventory.ItemStack
+        DataVersion: 4671
+        id: minecraft:netherite_helmet
+        count: 1
+        schema_version: 1
+      CHEST:
+        ==: org.bukkit.inventory.ItemStack
+        DataVersion: 4671
+        id: minecraft:netherite_chestplate
+        count: 1
+        schema_version: 1
+      LEGS:
+        ==: org.bukkit.inventory.ItemStack
+        DataVersion: 4671
+        id: minecraft:netherite_leggings
+        count: 1
+        schema_version: 1
+      OFFHAND:
+        ==: org.bukkit.inventory.ItemStack
+        DataVersion: 4671
+        id: minecraft:shield
+        count: 1
+        schema_version: 1
+      FEET:
+        ==: org.bukkit.inventory.ItemStack
+        DataVersion: 4671
+        id: minecraft:netherite_boots
+        count: 1
+        schema_version: 1
+      MAINHAND:
+        ==: org.bukkit.inventory.ItemStack
+        DataVersion: 4671
+        id: minecraft:netherite_sword
+        count: 1
+        schema_version: 1
+    actions:
+      RIGHT_CLICK:
+        '1':
+          action: message
+          value: '&4&lGuardia Nordico: &6&lBienvenidos a Pueblo Comercio!'
+  abdff850-0628-4215-8858-688c6f77d3c6:
+    name: npc4
+    creator: 27624550-5762-38db-a0a7-5ccd77095ef1
+    displayName: '&3&lGelda'
+    type: PLAYER
+    location:
+      world: world
+      x: -1529.5
+      y: 102.0
+      z: 1089.5
+      yaw: 60.65454
+      pitch: 14.038398
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: true
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    visibility: ALL
+    skin:
+      identifier: iiasfg_
+      variant: AUTO
+      mirrorSkin: false
+    actions:
+      RIGHT_CLICK:
+        '1':
+          action: message
+          value: '&3&lGelda: &2&lHola! Veo que son nuevos por aca, no los habia visto
+            antes por aqui.... que extraño, bueno deben llegar de muy lejos, les recomiendo
+            ir a Pueblo Comercio que queda cerca de aca, solo sigan adelante.'
+  d32c1238-4d83-4a4c-98ca-a8780d4da01e:
+    name: npc5
+    creator: 27624550-5762-38db-a0a7-5ccd77095ef1
+    displayName: '&3&lHermenegildo'
+    type: PLAYER
+    location:
+      world: world
+      x: -1240.5
+      y: 68.0
+      z: 847.5
+      yaw: 52.05854
+      pitch: 44.590267
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: true
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    visibility: ALL
+    skin:
+      identifier: xBoggy
+      variant: AUTO
+      mirrorSkin: false
+  65452860-c077-4b64-85f5-49bf2e27738b:
+    name: npc6
+    creator: 27624550-5762-38db-a0a7-5ccd77095ef1
+    displayName: '&5&lSasha'
+    type: PLAYER
+    location:
+      world: world
+      x: -1243.5
+      y: 68.0
+      z: 853.5
+      yaw: 178.85715
+      pitch: 22.886911
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: true
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    visibility: ALL
+    skin:
+      mirrorSkin: false
+      identifier: knopfronja
+      variant: AUTO

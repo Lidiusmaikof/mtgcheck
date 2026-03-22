@@ -1,0 +1,190 @@
+---- BEAUTYQUESTS LOGGER - OPENED Sun Mar 22 01:30:20 UTC 2026 ----
+[01:30:34] [BeautyQuests] [INFO] Enabling BeautyQuests v2.0.0
+[01:30:34] [BeautyQuests] [INFO] ------------ BeautyQuests ------------
+[01:30:34] [BeautyQuests] [DEBUG] Paper detected.
+[01:30:34] [BeautyQuests] [DEBUG] Server version: 1.21.11-99-81b9122 (MC: 1.21.11)
+[01:30:34] [BeautyQuests] [INFO] Loaded valid Paper internals access.
+[01:30:34] [BeautyQuests] [DEBUG] Loading data file, last time edited : Sat Mar 21 23:25:31 UTC 2026
+[01:30:35] [BeautyQuests] [INFO] Loaded language en_US (0.043s)!
+[01:30:35] [BeautyQuests] [DEBUG] Loaded start particles: DUST in shape POINT with color R255 G255 B0
+[01:30:35] [BeautyQuests] [DEBUG] Loaded talk particles: HAPPY_VILLAGER in shape BAR
+[01:30:35] [BeautyQuests] [DEBUG] Loaded next particles: SMOKE in shape SPOT
+[01:30:35] [API] [DEBUG] Message sender has been registered: fr.skytasul.quests.npcs.dialogs.ChatMessageSender
+[01:30:35] [BeautyQuests] [DEBUG] Initializing default stage types.
+[01:30:35] [Stages] [DEBUG] Registered (Mobs, 0)
+[01:30:35] [Stages] [DEBUG] Registered (Mine, 1)
+[01:30:35] [Stages] [DEBUG] Registered (Place, 2)
+[01:30:35] [Stages] [DEBUG] Registered (Chat, 3)
+[01:30:35] [Stages] [DEBUG] Registered (InteractBlock, 4)
+[01:30:35] [Stages] [DEBUG] Registered (InteractLocation, 5)
+[01:30:35] [Stages] [DEBUG] Registered (Fish, 6)
+[01:30:35] [Stages] [DEBUG] Registered (Melt, 7)
+[01:30:35] [Stages] [DEBUG] Registered (Enchant, 8)
+[01:30:35] [Stages] [DEBUG] Registered (Craft, 9)
+[01:30:35] [Stages] [DEBUG] Registered (Bucket, 10)
+[01:30:35] [Stages] [DEBUG] Registered (StageLocation, 11)
+[01:30:35] [Stages] [DEBUG] Registered (PlayTime, 12)
+[01:30:35] [Stages] [DEBUG] Registered (Breed, 13)
+[01:30:35] [Stages] [DEBUG] Registered (Tame, 14)
+[01:30:35] [Stages] [DEBUG] Registered (Death, 15)
+[01:30:35] [Stages] [DEBUG] Registered (DealDamage, 16)
+[01:30:35] [Stages] [DEBUG] Registered (EatDrink, 17)
+[01:30:35] [BeautyQuests] [DEBUG] Initializing default quest options.
+[01:30:35] [API] [DEBUG] Quest option registered (id: customOrder)
+[01:30:35] [API] [DEBUG] Quest option registered (id: pool)
+[01:30:35] [API] [DEBUG] Quest option registered (id: name)
+[01:30:35] [API] [DEBUG] Quest option registered (id: description)
+[01:30:35] [API] [DEBUG] Quest option registered (id: customItem)
+[01:30:35] [API] [DEBUG] Quest option registered (id: confirmMessage)
+[01:30:35] [API] [DEBUG] Quest option registered (id: bypassLimit)
+[01:30:35] [API] [DEBUG] Quest option registered (id: startableFromGUI)
+[01:30:35] [API] [DEBUG] Quest option registered (id: failOnDeath)
+[01:30:35] [API] [DEBUG] Quest option registered (id: cancellable)
+[01:30:35] [API] [DEBUG] Quest option registered (id: cancelActions)
+[01:30:35] [API] [DEBUG] Quest option registered (id: scoreboard)
+[01:30:35] [API] [DEBUG] Quest option registered (id: hideNoRequirements)
+[01:30:35] [API] [DEBUG] Quest option registered (id: auto)
+[01:30:35] [API] [DEBUG] Quest option registered (id: repeatable)
+[01:30:35] [API] [DEBUG] Quest option registered (id: timer)
+[01:30:35] [API] [DEBUG] Quest option registered (id: visibility)
+[01:30:35] [API] [DEBUG] Quest option registered (id: endSound)
+[01:30:35] [API] [DEBUG] Quest option registered (id: firework)
+[01:30:35] [API] [DEBUG] Quest option registered (id: requirements)
+[01:30:35] [API] [DEBUG] Quest option registered (id: startRewards)
+[01:30:35] [API] [DEBUG] Quest option registered (id: startMessage)
+[01:30:35] [API] [DEBUG] Quest option registered (id: endRewards)
+[01:30:35] [API] [DEBUG] Quest option registered (id: endMsg)
+[01:30:35] [BeautyQuests] [DEBUG] Initializing default item comparisons.
+[01:30:35] [API] [DEBUG] Item comparison registered (id: bukkit)
+[01:30:35] [API] [DEBUG] Item comparison registered (id: customBukkit)
+[01:30:35] [API] [DEBUG] Item comparison registered (id: material)
+[01:30:35] [API] [DEBUG] Item comparison registered (id: name)
+[01:30:35] [API] [DEBUG] Item comparison registered (id: lore)
+[01:30:35] [API] [DEBUG] Item comparison registered (id: enchants)
+[01:30:35] [API] [DEBUG] Item comparison registered (id: repair)
+[01:30:35] [BeautyQuests] [DEBUG] Initializing default rewards.
+[01:30:35] [Registry rewards] [DEBUG] New object: id commandReward, class fr.skytasul.quests.rewards.CommandReward
+[01:30:35] [Registry rewards] [DEBUG] New object: id itemReward, class fr.skytasul.quests.rewards.ItemReward
+[01:30:35] [Registry rewards] [DEBUG] New object: id removeItemsReward, class fr.skytasul.quests.rewards.RemoveItemsReward
+[01:30:35] [Registry rewards] [DEBUG] New object: id textReward, class fr.skytasul.quests.rewards.MessageReward
+[01:30:35] [Registry rewards] [DEBUG] New object: id tpReward, class fr.skytasul.quests.rewards.TeleportationReward
+[01:30:35] [Registry rewards] [DEBUG] New object: id expReward, class fr.skytasul.quests.rewards.XPReward
+[01:30:35] [Registry rewards] [DEBUG] New object: id checkpointReward, class fr.skytasul.quests.rewards.CheckpointReward
+[01:30:35] [Registry rewards] [DEBUG] New object: id questStopReward, class fr.skytasul.quests.rewards.QuestStopReward
+[01:30:35] [Registry rewards] [DEBUG] New object: id requirementDependentReward, class fr.skytasul.quests.rewards.RequirementDependentReward
+[01:30:35] [Registry rewards] [DEBUG] New object: id randomReward, class fr.skytasul.quests.rewards.RandomReward
+[01:30:35] [Registry rewards] [DEBUG] New object: id wait, class fr.skytasul.quests.rewards.WaitReward
+[01:30:35] [Registry rewards] [DEBUG] New object: id titleReward, class fr.skytasul.quests.rewards.TitleReward
+[01:30:35] [BeautyQuests] [DEBUG] Initializing default requirements.
+[01:30:35] [Registry requirements] [DEBUG] New object: id logicalOr, class fr.skytasul.quests.requirements.logical.LogicalOrRequirement
+[01:30:35] [Registry requirements] [DEBUG] New object: id questRequired, class fr.skytasul.quests.requirements.QuestRequirement
+[01:30:35] [Registry requirements] [DEBUG] New object: id levelRequired, class fr.skytasul.quests.requirements.LevelRequirement
+[01:30:35] [Registry requirements] [DEBUG] New object: id permissionRequired, class fr.skytasul.quests.requirements.PermissionsRequirement
+[01:30:35] [Registry requirements] [DEBUG] New object: id scoreboardRequired, class fr.skytasul.quests.requirements.ScoreboardRequirement
+[01:30:35] [Registry requirements] [DEBUG] New object: id equipmentRequired, class fr.skytasul.quests.requirements.EquipmentRequirement
+[01:30:35] [BeautyQuests] [DEBUG] Initializing default stage options.
+[01:30:35] [Registry stage-options-MOBS] [DEBUG] New object: id progressbar, class fr.skytasul.quests.stages.options.StageOptionProgressBar
+[01:30:35] [Registry stage-options-MINE] [DEBUG] New object: id progressbar, class fr.skytasul.quests.stages.options.StageOptionProgressBar
+[01:30:35] [Registry stage-options-PLACE_BLOCKS] [DEBUG] New object: id progressbar, class fr.skytasul.quests.stages.options.StageOptionProgressBar
+[01:30:35] [Registry stage-options-FISH] [DEBUG] New object: id progressbar, class fr.skytasul.quests.stages.options.StageOptionProgressBar
+[01:30:35] [Registry stage-options-MELT] [DEBUG] New object: id progressbar, class fr.skytasul.quests.stages.options.StageOptionProgressBar
+[01:30:35] [Registry stage-options-ENCHANT] [DEBUG] New object: id progressbar, class fr.skytasul.quests.stages.options.StageOptionProgressBar
+[01:30:35] [Registry stage-options-CRAFT] [DEBUG] New object: id progressbar, class fr.skytasul.quests.stages.options.StageOptionProgressBar
+[01:30:35] [Registry stage-options-BUCKET] [DEBUG] New object: id progressbar, class fr.skytasul.quests.stages.options.StageOptionProgressBar
+[01:30:35] [Registry stage-options-PLAY_TIME] [DEBUG] New object: id progressbar, class fr.skytasul.quests.stages.options.StageOptionProgressBar
+[01:30:35] [Registry stage-options-BREED] [DEBUG] New object: id progressbar, class fr.skytasul.quests.stages.options.StageOptionProgressBar
+[01:30:35] [Registry stage-options-TAME] [DEBUG] New object: id progressbar, class fr.skytasul.quests.stages.options.StageOptionProgressBar
+[01:30:35] [Registry stage-options-DEAL_DAMAGE] [DEBUG] New object: id progressbar, class fr.skytasul.quests.stages.options.StageOptionProgressBar
+[01:30:35] [Registry stage-options-EAT_DRINK] [DEBUG] New object: id progressbar, class fr.skytasul.quests.stages.options.StageOptionProgressBar
+[01:30:35] [BeautyQuests] [DEBUG] Initializing default miscellenaeous.
+[01:30:35] [API] [DEBUG] Mob factory registered (id: bukkitEntity)
+[01:30:35] [Registry quester-strategies] [DEBUG] New object: id player, class fr.skytasul.quests.quests.questers.PlayerQuesterStrategy
+[01:30:35] [API] [DEBUG] Quest option registered (id: questerStrategy)
+[01:30:35] [Integrations] [DEBUG] Hooked into [FancyNpcs] v2.9.2.344
+[01:30:35] [Integrations] [DEBUG] Hooked into [MythicMobs] v5.11.2-6a371d59
+[01:30:35] [Integrations] [DEBUG] Hooked into [WorldGuard] v7.0.16-beta-01+ce4622f
+[01:30:35] [NpcManager] [DEBUG] Adding fancynpcs as an npc factory
+[01:30:35] [Stages] [DEBUG] Registered (Talk, 18)
+[01:30:35] [Stages] [DEBUG] Registered (Items, 19)
+[01:30:35] [API] [DEBUG] Quest option registered (id: starterNPC)
+[01:30:35] [API] [DEBUG] Quest option registered (id: startDialog)
+[01:30:35] [API] [DEBUG] Quest option registered (id: hologramText)
+[01:30:35] [API] [DEBUG] Quest option registered (id: hologramLaunch)
+[01:30:35] [API] [DEBUG] Quest option registered (id: hologramLaunchNo)
+[01:30:35] [API] [DEBUG] Mob factory registered (id: mythicMobs)
+[01:30:35] [NpcManager] [DEBUG] Adding mythicmobs as an npc factory
+[01:30:35] [BeautyQuests] [DEBUG] Now using WorldGuard entry API.
+[01:30:35] [Stages] [DEBUG] Registered (Find, 20)
+[01:30:35] [Registry requirements] [DEBUG] New object: id regionRequired, class fr.skytasul.quests.integrations.worldguard.RegionRequirement
+[01:30:35] [BeautyQuests] [DEBUG] Started bStats metrics
+[01:30:35] [BeautyQuests] [DEBUG] Starting Spigot updater
+[01:30:50] [BeautyQuests] [DEBUG] Loaded 0 pools.
+[01:30:50] [Quests] [DEBUG] Finished loading 7 quests
+[01:30:50] [QuesterManager] [DEBUG] Locking quester manager.
+[01:30:50] [YamlDataManager] [DEBUG] 4 quester identifiers loaded
+[01:30:50] [ScoreboardManager] [DEBUG] Registered 5 lines in scoreboard
+[01:30:50] [BeautyQuests] [INFO] 7 quests loaded (0.077s)!
+[01:30:50] [BeautyQuests] [INFO] Periodic saves task started (18000 ticks). Task ID: 53
+[01:35:56] [PlayerManager] [DEBUG] Loading quester for Lastsamurai (identifier: 12f77f1f-1c8a-3c37-9e32-8784c4fa9c6a)
+[01:45:51] [QuesterManager] [DEBUG] Saving questers...
+[01:45:51] [BeautyQuests] [DEBUG] Saved datas (0.006s)!
+[01:45:51] [BeautyQuests] [INFO] Datas saved ~ periodic save
+[01:47:14] [PlayerManager] [DEBUG] Loading quester for VenaticWinner67 (identifier: 27624550-5762-38db-a0a7-5ccd77095ef1)
+[01:53:10] [PlayerManager] [DEBUG] Unloading quester for VenaticWinner67
+[01:53:14] [PlayerManager] [DEBUG] Loading quester for VenaticWinner67 (identifier: 27624550-5762-38db-a0a7-5ccd77095ef1)
+[01:54:10] [BeautyQuests] [DEBUG] VenaticWinner67 executed command: quest edit 8
+[01:54:10] [BeautyQuests] [DEBUG] VenaticWinner67 has opened inventory fr.skytasul.quests.gui.creation.stages.StagesGUI.
+[01:54:16] [BeautyQuests] [DEBUG] VenaticWinner67 has opened inventory fr.skytasul.quests.gui.creation.stages.StagesGUI.
+[01:54:17] [BeautyQuests] [DEBUG] VenaticWinner67 has opened inventory fr.skytasul.quests.gui.creation.stages.StagesGUI.
+[01:54:27] [BeautyQuests] [DEBUG] VenaticWinner67 executed command: quest edit 7
+[01:54:27] [BeautyQuests] [DEBUG] VenaticWinner67 has opened inventory fr.skytasul.quests.gui.creation.stages.StagesGUI.
+[01:54:30] [BeautyQuests] [DEBUG] VenaticWinner67 has opened inventory fr.skytasul.quests.gui.creation.stages.StagesGUI.
+[01:54:35] [BeautyQuests] [DEBUG] VenaticWinner67 executed command: quest edit 6
+[01:54:35] [BeautyQuests] [DEBUG] VenaticWinner67 has opened inventory fr.skytasul.quests.gui.creation.stages.StagesGUI.
+[01:54:39] [BeautyQuests] [DEBUG] VenaticWinner67 has opened inventory fr.skytasul.quests.gui.mobs.MobsListGUI.
+[01:54:40] [BeautyQuests] [DEBUG] VenaticWinner67 has opened inventory fr.skytasul.quests.gui.mobs.MobsListGUI.
+[01:54:42] [BeautyQuests] [DEBUG] VenaticWinner67 has opened inventory fr.skytasul.quests.gui.creation.stages.StagesGUI.
+[01:54:55] [BeautyQuests] [DEBUG] VenaticWinner67 executed command: quest start Lastsamurai 6
+[01:54:55] [BeautyQuests] [DEBUG] [ADMIN]: Lastsamurai started the quest 6
+[01:55:04] [BeautyQuests] [DEBUG] VenaticWinner67 executed command: quest start VenaticWinner67 6
+[01:55:04] [BeautyQuests] [DEBUG] [ADMIN]: VenaticWinner67 started the quest 6
+[02:00:51] [QuesterManager] [DEBUG] Saving questers...
+[02:00:51] [BeautyQuests] [DEBUG] Saved datas (0.004s)!
+[02:00:51] [BeautyQuests] [INFO] Datas saved ~ periodic save
+[02:01:02] [BeautyQuests] [DEBUG] [ADMIN]: Lastsamurai started the quest 8
+[02:01:44] [BeautyQuests] [DEBUG] [ADMIN]: Lastsamurai started the quest 7
+[02:15:52] [QuesterManager] [DEBUG] Saving questers...
+[02:15:52] [BeautyQuests] [DEBUG] Saved datas (0.003s)!
+[02:15:52] [BeautyQuests] [INFO] Datas saved ~ periodic save
+[02:21:17] [BeautyQuests] [DEBUG] Next stage for player Lastsamurai (coming from stage 0:0 (MOBS) of quest 6, branch 0)
+[02:21:17] [BeautyQuests] [DEBUG] [ADMIN]: Quester Lastsamurai has finished the stage 0:0 of quest 6
+[02:21:17] [BeautyQuests] [DEBUG] [ADMIN]: Lastsamurai is completing the quest 6
+[02:21:17] [BeautyQuests] [DEBUG] Next stage for player Lastsamurai (coming from stage 0:0 (MOBS) of quest 6, branch 0)
+[02:21:17] [BeautyQuests] [WARNING] Trying to finish stage stage 0:0 (MOBS) of quest 6, branch 0 for player Lastsamurai but was not in progress.
+[02:28:23] [BeautyQuests] [DEBUG] [ADMIN]: VenaticWinner67 started the quest 7
+[02:28:30] [BeautyQuests] [DEBUG] Next stage for player VenaticWinner67 (coming from stage 0:0 (ITEMS) of quest 7, branch 0)
+[02:28:30] [BeautyQuests] [DEBUG] [ADMIN]: Quester VenaticWinner67 has finished the stage 0:0 of quest 7
+[02:28:30] [BeautyQuests] [DEBUG] [ADMIN]: VenaticWinner67 is completing the quest 7
+[02:29:10] [BeautyQuests] [DEBUG] [ADMIN]: VenaticWinner67 started the quest 8
+[02:30:52] [QuesterManager] [DEBUG] Saving questers...
+[02:30:52] [BeautyQuests] [DEBUG] Saved datas (0.01s)!
+[02:30:52] [BeautyQuests] [INFO] Datas saved ~ periodic save
+[02:45:52] [QuesterManager] [DEBUG] Saving questers...
+[02:45:52] [BeautyQuests] [DEBUG] Saved datas (0.003s)!
+[02:45:52] [BeautyQuests] [INFO] Datas saved ~ periodic save
+[02:49:43] [BeautyQuests] [DEBUG] Next stage for player Lastsamurai (coming from stage 0:0 (ITEMS) of quest 8, branch 0)
+[02:49:43] [BeautyQuests] [DEBUG] [ADMIN]: Quester Lastsamurai has finished the stage 0:0 of quest 8
+[02:49:43] [BeautyQuests] [DEBUG] [ADMIN]: Lastsamurai is completing the quest 8
+[02:49:58] [BeautyQuests] [DEBUG] Next stage for player Lastsamurai (coming from stage 0:0 (ITEMS) of quest 7, branch 0)
+[02:49:58] [BeautyQuests] [DEBUG] [ADMIN]: Quester Lastsamurai has finished the stage 0:0 of quest 7
+[02:49:58] [BeautyQuests] [DEBUG] [ADMIN]: Lastsamurai is completing the quest 7
+[02:55:01] [BeautyQuests] [DEBUG] Next stage for player VenaticWinner67 (coming from stage 0:0 (MOBS) of quest 6, branch 0)
+[02:55:01] [BeautyQuests] [DEBUG] [ADMIN]: Quester VenaticWinner67 has finished the stage 0:0 of quest 6
+[02:55:01] [BeautyQuests] [DEBUG] [ADMIN]: VenaticWinner67 is completing the quest 6
+[03:00:52] [QuesterManager] [DEBUG] Saving questers...
+[03:00:52] [BeautyQuests] [DEBUG] Saved datas (0.002s)!
+[03:00:52] [BeautyQuests] [INFO] Datas saved ~ periodic save
+[03:01:50] [BeautyQuests] [DEBUG] Next stage for player VenaticWinner67 (coming from stage 0:0 (ITEMS) of quest 8, branch 0)
+[03:01:50] [BeautyQuests] [DEBUG] [ADMIN]: Quester VenaticWinner67 has finished the stage 0:0 of quest 8
+[03:01:50] [BeautyQuests] [DEBUG] [ADMIN]: VenaticWinner67 is completing the quest 8
+[03:02:30] [PlayerManager] [DEBUG] Unloading quester for VenaticWinner67

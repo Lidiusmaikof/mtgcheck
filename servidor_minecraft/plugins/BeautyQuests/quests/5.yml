@@ -1,0 +1,58 @@
+name: §3§lCraftea la Armadura de Diamante
+description: §9§lCraftea la armadura de diamante para recibir las recompensas diarias.
+endMsg: completaste la mision
+endRewards:
+- id: expReward
+  xp: 300
+- id: itemReward
+  items:
+  - DataVersion: 4671
+    id: minecraft:diamond
+    count: 16
+    schema_version: 1
+  - DataVersion: 4671
+    id: minecraft:gold_ingot
+    count: 16
+    schema_version: 1
+  - DataVersion: 4671
+    id: minecraft:iron_ingot
+    count: 16
+    schema_version: 1
+  - DataVersion: 4671
+    id: minecraft:copper_ingot
+    count: 16
+    schema_version: 1
+manager:
+  branches:
+    '0':
+      stages:
+        '0':
+          result:
+            DataVersion: 4671
+            id: minecraft:diamond_helmet
+            count: 1
+            schema_version: 1
+          stageType: CRAFT
+        '1':
+          result:
+            DataVersion: 4671
+            id: minecraft:diamond_chestplate
+            count: 1
+            schema_version: 1
+          stageType: CRAFT
+        '2':
+          result:
+            DataVersion: 4671
+            id: minecraft:diamond_leggings
+            count: 1
+            schema_version: 1
+          stageType: CRAFT
+        '3':
+          result:
+            DataVersion: 4671
+            id: minecraft:diamond_boots
+            count: 1
+            schema_version: 1
+          stageType: CRAFT
+      endingStages: {}
+id: 5

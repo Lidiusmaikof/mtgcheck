@@ -1,0 +1,46 @@
+name: §3§lMisiones Diarias
+description: §4§lMata mobs hostiles para recibir la recompensa.
+endMsg: §4§lFelicidades completaste la mision diaria!
+endRewards:
+- id: expReward
+  xp: 100
+- id: itemReward
+  items:
+  - DataVersion: 4671
+    id: minecraft:copper_ingot
+    count: 16
+    schema_version: 1
+  - DataVersion: 4671
+    id: minecraft:iron_ingot
+    count: 16
+    schema_version: 1
+  - DataVersion: 4671
+    id: minecraft:diamond
+    count: 16
+    schema_version: 1
+  - DataVersion: 4671
+    id: minecraft:gold_ingot
+    count: 16
+    schema_version: 1
+- id: expReward
+  customDescription: close
+  xp: 100
+manager:
+  branches:
+    '0':
+      stages:
+        '0':
+          objects:
+            29c94ddf-dc91-34dd-97fa-41950c53efcd:
+              amount: 30
+              object:
+                factoryName: bukkitEntity
+                value: ZOMBIE
+            1f727de5-158e-31ec-842d-042b585e88b5:
+              amount: 20
+              object:
+                factoryName: bukkitEntity
+                value: SKELETON
+          stageType: MOBS
+      endingStages: {}
+id: 4

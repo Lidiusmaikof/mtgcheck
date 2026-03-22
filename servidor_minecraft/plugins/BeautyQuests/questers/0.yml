@@ -1,0 +1,38 @@
+provider: beautyquests:players
+identifier: 27624550-5762-38db-a0a7-5ccd77095ef1
+quests:
+  '3':
+    state: NOT_STARTED
+    stageData: {}
+    questFlow: 0:0
+    timesFinished: 1
+  '2':
+    state: NOT_STARTED
+    stageData: {}
+    questFlow: 0:0
+    timesFinished: 1
+  '5':
+    state: NOT_STARTED
+    stageData: {}
+    questFlow: 0:0;0:1;0:2;0:3
+    timesFinished: 1
+  '4':
+    state: NOT_STARTED
+    stageData: {}
+    questFlow: 0:0
+    timesFinished: 1
+  '6':
+    state: NOT_STARTED
+    stageData: {}
+    questFlow: 0:0
+    timesFinished: 1
+  '7':
+    state: NOT_STARTED
+    stageData: {}
+    questFlow: 0:0
+    timesFinished: 1
+  '8':
+    state: NOT_STARTED
+    stageData: {}
+    questFlow: 0:0
+    timesFinished: 1
